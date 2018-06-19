@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+<html>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<footer>
+		<img id="logof" src="images/logo_white.png">
+	<p>Émilie Brunet Design &copy</p>
+	<img class="social" src="images/social_icon_1.png">
+		<img class="social" src="images/social_icon_2.png">
+			<img class="social" src="images/social_icon_3.png">
+	</footer>
+
+<a href="index.html"><img id="logo" src="images/logo2.jpg"></a>
+
+<nav>
+	<a class="navy" href="https://www.google.ca">work</a>
+	<a class="navy" href="#about">about</a>
+	<a class="navy" href="#contact">contact</a>
+</nav>
+
+	<svg id="angle1" data-name="angle1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1072.11 1153.68">
+	  <g id="Layer_2" data-name="Layer 2">
+	  <g id="Layer_1-2" data-name="Layer 1-2">
+	  <polygon points="0 1153.68 719.07 0.18 1072.11 0 368.95 1153.68 0 1153.68"/>
+	</g></g></svg>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="https://www.w3schools.com"> <img src="slides/slide1.jpg" style="width:100%"></a>
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide7.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide9.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="slides/slide10.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+	<span class="dot" onclick="currentSlide(8)"></span>
+	<span class="dot" onclick="currentSlide(9)"></span>
+	<span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<h1 id="work">Work</h1>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html>
