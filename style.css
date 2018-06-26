@@ -1,8 +1,9 @@
 
 #logo {
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	position: fixed;
+	border: black solid 10px;
 }
 
 nav{
@@ -59,11 +60,105 @@ nav{
 	width: 300px;
 	height: 250px;
 	box-sizing: border-box;
-	background-image: url(images/grey.jpg);
 	background-size: cover;
 	background-position: center;
 	display: inline-flex;
 	margin: 20px;
+}
+
+#work1{
+		background-image: url(images/works/);
+}
+
+#work1 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-15px, 270px);
+}
+
+#work2{
+		background-image: url(images/works/);
+}
+
+#work2 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-15px, 238px);
+}
+
+#work3{
+		background-image: url(images/works/les_anges_web_bw.jpg);
+		cursor: pointer;
+}
+
+#work3:hover{
+		background-image: url(images/works/les_anges_web_red.jpg);
+}
+
+#work3 p {
+	color: black;
+	font-size: 34px;
+	transform: rotate(-90deg) translate(-10px, 230px);
+}
+
+#work4{
+		background-image: url(images/works/smush_lips_web_bw.jpg);
+}
+
+#work4 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 288px);
+}
+
+#work5{
+		background-image: url(images/works/);
+}
+
+#work5 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 275px);
+}
+
+#work6{
+		background-image: url(images/works/);
+}
+
+#work6 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 276px);
+}
+
+#work7{
+		background-image: url(images/works/);
+}
+
+#work7 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 234px);
+}
+
+#work8{
+		background-image: url(images/works/);
+}
+
+#work8 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 241px);
+}
+
+#work9{
+		background-image: url(images/works/);
+}
+
+#work9 p {
+	color: black;
+	font-size: 38px;
+	transform: rotate(-90deg) translate(-10px, 262px);
 }
 
 #Layer_1-2 {
