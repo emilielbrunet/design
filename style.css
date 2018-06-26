@@ -44,12 +44,15 @@ nav{
 	position: relative;
 	z-index: -95;
 	width: 100%;
-	height: 1000px;
 	background-color: black;
 	margin-top: -4px;
 	padding-left: 7vw;
 	padding-right: 7vw;
 	padding-top: 60px;
+	padding-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .works {
@@ -157,6 +160,61 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+#about {
+	padding-left: 7vw;
+	padding-right: 7vw;
+	margin-top: 60px;
+}
+
+#aboutGraphic{
+	color: black;
+}
+
+#about1 {
+	width: 40%;
+	display: inline-block;
+	line-height: 24px;
+}
+
+#about1 h2{
+	padding-left: 15px;
+}
+
+
+#aboutUi{
+	color: black;
+}
+
+#about2 {
+	width: 40%;
+	display: inline-block;
+	float: right;
+	text-align: right;
+	line-height: 24px;
+}
+
+h2{
+	margin-bottom: 0px;
+}
+
+#about3 {
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+		line-height: 24px;
+}
+
+#aboutMe{
+	color: black;
+}
+
+#bottomspace {
+	height: 7.5vh;
+	width: 100%;
+}
+
 footer{
 	height: 8vh;
 	width: 100%;
@@ -166,7 +224,7 @@ footer{
 	line-height: 4.5vh;
 }
 
-p, footer{
+footer, p{
 	padding-left: 20px;
 	color: white;
 	display: inline-block;
