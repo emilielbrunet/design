@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<head>
 <html>
+<head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 	<footer>
-		<img id="logof" src="images/logo_white.png">
+		<img alt="logo" id="logof" src="images/logo_white.png">
 	<p>Émilie Brunet Design &copy</p>
-	<img class="social" src="images/social_icon_1.png">
-		<img class="social" src="images/social_icon_2.png">
-			<img class="social" src="images/social_icon_3.png">
+	<img alt="behance" class="social" src="images/social_icon_1.png">
+		<img alt="indeed" class="social" src="images/social_icon_2.png">
+			<img class="social" alt="email" src="images/social_icon_3.png">
 	</footer>
 
-<a href="index.html"><img id="logo" src="images/logo2.jpg"></a>
+<a href="index.html"><img id="logo" alt="logo" src="images/logo2.jpg"></a>
 
-<nav>
-	<a class="navy" href="https://www.google.ca">work</a>
-	<a class="navy" href="#about">about</a>
-	<a class="navy" href="#contact">contact</a>
+<span id="mobilenav" onclick="openNav()">☰</span>
+<div id="header"></div>
+<nav id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<div class="overlay-content">
+	<a  href="#html" class="current">main</a>
+	<a href=".works">work</a>
+	<a href="#about">about</a>
+	<a href="#contact">contact</a>
+	</div>
 </nav>
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <a href="https://www.w3schools.com"> <img src="slides/slide1.jpg" style="width:100%"></a>
+  <a href="https://www.w3schools.com"> <img src="slides/slide1.jpg" alt="carousel" style="width:100%"></a>
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide2.jpg" style="width:100%">
+  <img src="slides/slide2.jpg" alt="ride the river" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide3.jpg" style="width:100%">
+  <img src="slides/slide3.jpg" alt="les anges d'alex" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide4.jpg" style="width:100%">
+  <img src="slides/slide4.jpg" alt="smush" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide5.jpg" style="width:100%">
+  <img src="slides/slide5.jpg" alt="feed mtl" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide6.jpg" style="width:100%">
+  <img src="slides/slide6.jpg" alt="synacor" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide7.jpg" style="width:100%">
+  <img src="slides/slide7.jpg" alt="poster series" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide8.jpg" style="width:100%">
+  <img src="slides/slide8.jpg" alt="jenny aliaga" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <img src="slides/slide9.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="slides/slide10.jpg" style="width:100%">
+  <img src="slides/slide9.jpg" alt="lithesome" style="width:100%">
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -80,7 +83,6 @@
 	<span class="dot" onclick="currentSlide(7)"></span>
 	<span class="dot" onclick="currentSlide(8)"></span>
 	<span class="dot" onclick="currentSlide(9)"></span>
-	<span class="dot" onclick="currentSlide(10)"></span>
 </div>
 
 <div id="triangle1"></div>
@@ -142,6 +144,13 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3500); // Change image every 3 seconds
 }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
 </script>
 
 </body>
