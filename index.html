@@ -24,7 +24,7 @@
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	<div class="overlay-content">
 	<a  href="#html" class="current">main</a>
-	<a href=".works">work</a>
+	<a href="#blackbg">work</a>
 	<a href="#about">about</a>
 	<a href="#contact">contact</a>
 	</div>
@@ -74,7 +74,7 @@
 </div>
 <br>
 
-<div style="text-align:center">
+<div id="dots" style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
@@ -83,6 +83,7 @@
 	<span class="dot" onclick="currentSlide(7)"></span>
 	<span class="dot" onclick="currentSlide(8)"></span>
 	<span class="dot" onclick="currentSlide(9)"></span>
+	<span class="dot" onclick="currentSlide(10)"></span>
 </div>
 
 <div id="triangle1"></div>
@@ -142,12 +143,12 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3500); // Change image every 3 seconds
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
         }
-        
+
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }

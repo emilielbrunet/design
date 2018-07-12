@@ -295,6 +295,12 @@ img {vertical-align: middle;}
   top: 0;
 }
 
+#dots {
+	margin-top: 60px;
+	position: absolute;
+	left: 44.5vw;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
