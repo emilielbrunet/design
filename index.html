@@ -11,9 +11,9 @@
 	<footer>
 		<img alt="logo" id="logof" src="images/logo_white.png">
 	<p>Émilie Brunet Design &copy</p>
-	<img alt="behance" class="social" src="images/social_icon_1.png">
-		<img alt="indeed" class="social" src="images/social_icon_2.png">
-			<img class="social" alt="email" src="images/social_icon_3.png">
+				<a href=""><img class="social" alt="email" src="images/social_icon_3.png"></a>
+						<a href="blah"><img alt="indeed" class="social" src="images/social_icon_2.png"></a>
+	<a href="https://www.behance.net/emiliebrun1a2e"><img alt="behance" class="social" src="images/social_icon_1.png"></a>
 	</footer>
 
 <a href="index.html"><img id="logo" alt="logo" src="images/logo2.jpg"></a>
@@ -68,9 +68,6 @@
   <img src="slides/slide9.jpg" alt="lithesome" style="width:100%">
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
 </div>
 <br>
 
@@ -91,8 +88,11 @@
 
 <div id="blackbg">
 
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 <div class="works" id="work1"><p>carousel</p></div>
-<div class="works" id="work2"><p>ride the river</p></div>
+<a href="https://www.google.ca" class="works" id="work2"><p>ride the river</p></a>
 <div class="works" id="work3"><p>les anges d'alex</p></div>
 <div class="works" id="work4"><p>smush</p></div>
 <div class="works" id="work5"><p>feed mtl</p></div>
@@ -105,6 +105,9 @@
 
 <div id="about">
 
+<img id="myface" alt="Émilie Brunet" src="images/my_face_about_v4.jpg" style="width:40%">
+
+<div id="aboutBox">
 <div id="about1">
 <h2>graphic</h2>
 <p id="aboutGraphic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt dui ut ornare lectus sit amet est placerat.</p>
@@ -119,6 +122,7 @@
 <h2>me</h2>
 <p id="aboutMe">Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Lectus proin nibh nisl condimentum. Nisl tincidunt eget nullam non nisi est sit amet. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.</p>
 </div>
+</div>
 
 </div>
 
@@ -128,6 +132,33 @@
 <script>
 var slideIndex = 0;
 showSlides();
+
+var slideIndex = 1;
+showSlidesm(slideIndex);
+
+function plusSlides(n) {
+  showSlidesm(slideIndex += n);
+}
+
+function currentSlidem(n) {
+  showSlidesm(slideIndex = n);
+}
+
+function showSlidesm(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 function showSlides() {
     var i;
@@ -143,7 +174,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
