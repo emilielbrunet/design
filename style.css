@@ -394,7 +394,7 @@ display: block;
 	line-height: 24px;
 }
 
-#about1 h2{
+#about1 h3{
 	padding-left: 15px;
 }
 
@@ -411,8 +411,9 @@ display: block;
 	line-height: 24px;
 }
 
-h2{
+h3{
 	margin-bottom: 0px;
+	font-size: 1.5em;
 }
 
 #about3 {
@@ -426,6 +427,46 @@ h2{
 
 #aboutMe{
 	color: black;
+}
+
+#contact{
+	margin-top: 40px;
+	padding-top: 20%;
+	width: 101vw;
+	height: 97vh;
+	color: white;
+	background-color: #FF463E;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+}
+
+.contacttext, h1 {
+	font-size: 2em;
+}
+
+.contacttext, h2 {
+	font-size: 1.25em;
+	color: white;
+}
+
+a h2 {
+	border-bottom: 1px solid white;
+	width: 313px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a h2:hover {
+	border-bottom: 1px dotted white;
+	width: 313px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#annoyinga {
+	text-decoration: none;
 }
 
 #bottomspace {
