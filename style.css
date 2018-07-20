@@ -523,12 +523,13 @@ footer, p{
 			background-size: cover;
 			background-position: center;
 			z-index: -95;
+			margin-top: -50px;
 			background-image: url(images/angles2.png);
 		}
 
 		.slideshow-container {
 		  max-width: 550px;
-			height:  40vh;
+			height:  400px;
 			padding-top: 70px;
 		}
 
@@ -551,7 +552,7 @@ footer, p{
 			width: 100%;
 			height: 10px;
 			position: absolute;
-			margin-top: 20px;
+			margin-top: -20px;
 		}
 
 		#myface {
