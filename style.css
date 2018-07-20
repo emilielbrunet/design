@@ -127,6 +127,7 @@ html {
 	display: inline-flex;
 	margin: 20px;
 	cursor: pointer;
+			text-decoration: none;
 }
 
 #work1{
