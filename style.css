@@ -1,7 +1,7 @@
 body {
 background: white;
 	overflow-x:hidden;
-		width: 100vw;
+	max-width: 100vw;
 }
 
 html {
@@ -528,7 +528,7 @@ footer, p{
 
 		.slideshow-container {
 		  max-width: 550px;
-			height: 400px;
+			height: 50vh;
 			padding-top: 70px;
 		}
 
