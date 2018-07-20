@@ -3,6 +3,10 @@ background: white;
 	overflow-x:hidden;
 }
 
+html {
+	height: 100%;
+	width: 100%;}
+
 #logo {
 	width: 70px;
 	height: 70px;
@@ -85,26 +89,14 @@ background: white;
 	line-height:0px;
 }
 
-#triangle1 {
-  border: 0 solid black;
-  border-left-width: 49.5vw;
-  border-top-width: 120px;
-  border-top-color: transparent;
+#triangle3 {
+	width: 100%;
+	height: 209.5px;
 	position: relative;
-	display: inline-block;
+	background-size: cover;
+	background-position: center;
 	z-index: -95;
-	overflow: hidden;
-}
-
-#triangle2 {
-  border: 0 solid black;
-  border-right-width: 50vw;
-  border-top-width: 120px;
-  border-top-color: transparent;
-	position: relative;
-	display: inline-block;
-	z-index: -95;
-	overflow: hidden;
+	background-image: url(images/angles.png);
 }
 
 #blackbg {
@@ -272,8 +264,8 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 840px;
-	height: 550px;
+  max-width: 800px;
+	height: 425px;
   position: relative;
   margin: auto;
 	z-index: -99;
@@ -310,9 +302,14 @@ img {vertical-align: middle;}
 
 
 #dots {
-	margin-top: 60px;
+	margin: auto;
+}
+
+#dotholder {
+	width: 100%;
+	height: 10px;
 	position: absolute;
-	left: 44.5vw;
+	margin-top: 140px;
 }
 
 /* The dots/bullets/indicators */
@@ -485,7 +482,7 @@ footer, p{
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
     /* For mobile phones: */
 
 		#logo {
@@ -514,21 +511,20 @@ footer, p{
 		    font-size: 46px !important;
 		}
 
-
-		#triangle1 {
-		  border-left-width: 49.5vw;
-		  border-top-width: 85px;
-		}
-
-		#triangle2 {
-		  border-right-width: 49.4vw;
-		  border-top-width: 85px;
+		#triangle3 {
+			width: 100%;
+			height: 105px;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			z-index: -95;
+			background-image: url(images/angles2.png);
 		}
 
 		.slideshow-container {
-		  max-width: 650px;
-			height: 500px;
-			padding-top: 80px;
+		  max-width: 550px;
+			height: 400px;
+			padding-top: 70px;
 		}
 
 		.prev, .next {
@@ -546,15 +542,16 @@ footer, p{
 		  border-radius: 3px 0 0 3px;
 		}
 
-		#dots {
-			margin-top: 10px;
+		#dotholder {
+			width: 100%;
+			height: 10px;
 			position: absolute;
-			left: 35.5vw;
+			margin-top: 20px;
 		}
 
 		#myface {
 			margin-top: -60px;
-			width:60%;
+			width:70%;
 			z-index: -99;
 		}
 
