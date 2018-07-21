@@ -127,11 +127,12 @@ html {
 	display: inline-flex;
 	margin: 20px;
 	cursor: pointer;
-			text-decoration: none;
+	text-decoration: none;
 }
 
 #work1{
 		background-image: url(images/works/carousel_web_bw.jpg);
+		display: none;
 }
 
 #work1:hover{
@@ -145,22 +146,22 @@ html {
 }
 
 #work2{
-		background-image: url(images/works/river_parade_web_bw.jpg);
+		background-image: url(images/works/river_parade_bw.jpg);
 		cursor: pointer;
 		text-decoration: none;
 }
 
 #work2:hover {
 		color:yellow;
-		background-image: url(images/works/river_parade_web_red.jpg);
+		background-image: url(images/works/river_parade.jpg);
 }
 
 #work2 p {
 	color: black;
 	font-size: 38px;
-	overflow: hidden;
 	box-sizing: border-box;
 	transform: rotate(-90deg) translate(-15px, 238px);
+	display: none;
 }
 
 #work3{
@@ -169,21 +170,23 @@ html {
 }
 
 #work3:hover{
-		background-image: url(images/works/les_anges_web_red.jpg);
+		background-image: url(images/works/les_anges_web.jpg);
 }
 
 #work3 p {
 	color: black;
 	font-size: 34px;
 	transform: rotate(-90deg) translate(-10px, 230px);
+		display: none;
 }
 
 #work4{
 		background-image: url(images/works/smush_lips_web_bw.jpg);
+		box-sizing: border-box;
 }
 
 #work4:hover{
-		background-image: url(images/works/smush_lips_web_red.jpg);
+		background-image: url(images/works/smush_lips_web.jpg);
 }
 
 
@@ -191,20 +194,22 @@ html {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 288px);
+		display: none;
 }
 
 #work5{
-		background-image: url(images/works/feed_mtl_web_bw.jpg);
+		background-image: url(images/works/feed_bw.jpg);
 }
 
 #work5:hover {
-		background-image: url(images/works/feed_mtl_web_red.jpg);
+		background-image: url(images/works/feed.jpg);
 }
 
 #work5 p {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 275px);
+		display: none;
 }
 
 #work6{
@@ -212,31 +217,34 @@ html {
 }
 
 #work6:hover {
-		background-image: url(images/works/synacor_web_red.jpg);
+		background-image: url(images/works/synacor_web_.jpg);
 }
 
 #work6 p {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 276px);
+		display: none;
 }
 
 #work7{
-		background-image: url(images/works/poster_series_web_bw.jpg);
+		background-image: url(images/works/poster_bw.jpg);
 }
 
 #work7:hover{
-		background-image: url(images/works/poster_series_web_red.jpg);
+		background-image: url(images/works/poster.jpg);
 }
 
 #work7 p {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 234px);
+		display: none;
 }
 
 #work8{
 		background-image: url(images/works/jenny_web_bw.jpg);
+		display: none;
 }
 
 #work8:hover{
@@ -247,10 +255,12 @@ html {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 241px);
+		display: none;
 }
 
 #work9{
 		background-image: url(images/works/lithesome_web_bw.jpg);
+		display: none;
 }
 
 #work9:hover{
@@ -261,6 +271,7 @@ html {
 	color: black;
 	font-size: 38px;
 	transform: rotate(-90deg) translate(-10px, 262px);
+		display: none;
 }
 
 * {box-sizing: border-box}
