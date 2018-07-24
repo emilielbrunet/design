@@ -93,12 +93,18 @@ html {
 	line-height:0px;
 }
 
+#headlogo {
+	width: 35vw;
+	margin-right: 32.5vw;
+	margin-left: 32vw;
+	height: auto;
+	margin-top: 35vh;
+}
+
 #mainimg {
-	background-image: url(images/lesanges/header.png);
+	background-color: #7875FF;
 	width: 100%;
 	height: 85vh;
-	background-size: cover;
-	background-position: top;
 }
 
 #triangle3 {
@@ -135,18 +141,19 @@ text-align: center;
 	margin: auto;
 }
 
+
 #video {
-	height: 31.3vw;
+	height: 27.9vw;
 }
 
 #visit {
-	color: grey;
+	color: black;
 	font-size: 1.25em;
 	text-decoration: none;
 }
 
 #visitcntd {
-	border: 1px grey solid;
+	border: 1px black solid;
 	width: 130px;
 	height: 40px;
 	line-height: 40px;
@@ -158,7 +165,7 @@ text-align: center;
 }
 
 #visitcntd:hover {
-	background-color: grey;
+	background-color: black;
 	color: white;
 }
 
@@ -241,6 +248,36 @@ footer{
 	float: right;
 	margin-right: 20px;
 	cursor: pointer;
+}
+
+/* Mockups */
+
+.mock {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#mock2 {
+	width: 25vw;
+	height: 40vw;
+	background-position: center;
+	background-image: url(images/smush/mockup_view1.png);
+	background-size: cover;
+	margin: auto;
+	display: inline-block;
+}
+
+#mock3 {
+	width: 25vw;
+	height: 40vw;
+	background-position: center;
+	background-image: url(images/smush/mockup_view2.png);
+	background-size: cover;
+	margin: auto;
+	display: inline-block;
 }
 
 
