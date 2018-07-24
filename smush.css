@@ -16,10 +16,6 @@ html {
 	z-index: 99;
 }
 
-.shadow {
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-}
-
 #mobilenav {
 	width: 80px;
 	height: 80px;
@@ -98,7 +94,7 @@ html {
 }
 
 #mainimg {
-	background-image: url(images/riverparade/banner1.png);
+	background-image: url(images/lesanges/header.png);
 	width: 100%;
 	height: 85vh;
 	background-size: cover;
@@ -139,36 +135,53 @@ text-align: center;
 	margin: auto;
 }
 
-#colours {
-	width: 20vw;
-	height: 25vw;
-	background-image: url(images/riverparade/planning_3.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-	margin-left: 4.5vw;
-	margin-right: 5vw;
+#video {
+	height: 31.3vw;
 }
 
-#rplogo {
-	width: 20vw;
-	height: 24vw;
-	background-image: url(images/riverparade/rp_logo.png);
-	background-size: cover;
-	background-position: center;
-	display: inline-block;
-	margin-left: 5vw;
-	margin-right: 4.5vw;
+#visit {
+	color: grey;
+	font-size: 1.25em;
+	text-decoration: none;
 }
 
-#web1 {
+#visitcntd {
+	border: 1px grey solid;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 6vw;
+}
+
+#visitcntd:hover {
+	background-color: grey;
+	color: white;
+}
+
+#icon1 {
+	margin-left: 4vw;
+}
+
+.shadow {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+
+.icon {
+	width: 15vw;
+	display: inline-block;
+	margin: 1.5vw;
+}
+
+.topspace {
 	margin-top: 11vw;
 }
 
-#web2 {
-	transform: scale(1.1);
-	margin-top: 4vw;
-	margin-bottom: 4vw;
+.smallspace {
+	margin-top: 8vw;
 }
 
 .formatting {
@@ -183,18 +196,6 @@ text-align: center;
 	color: white;
 	width: 100%;
 	background-color: black;
-}
-
-#print1 {
-	margin-top: 11vw;
-}
-
-#print2 {
-	margin-top: 11vw;
-}
-
-#print3 {
-	margin-top: 11vw;
 }
 
 #bottomspace {
@@ -301,29 +302,11 @@ footer{
 		font-size: 1em;
 		}
 
-		#colours {
-			width: 35vw;
-			height: 40vw;
-			margin-left: 4.5vw;
-			margin-right: 5vw;
-		}
-
-		#rplogo {
-			width: 35vw;
-			height: 40vw;
-			margin-left: 5vw;
-			margin-right: 4.5vw;
-		}
-
 		.formatting {
 			width: 80vw;
 			margin-right: 5vw;
 			margin-left: 5vw;
 			height: 100%;
-		}
-
-		#web2 {
-			transform: scale(1.2);
 		}
 
 		footer{
