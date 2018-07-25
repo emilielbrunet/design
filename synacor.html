@@ -41,21 +41,7 @@
 	<p class="p1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 </div>
 
-<section id="logoetc" class="vw70">
-	<div id="rplogo"></div>
-	<div id="colours"></div>
-</section>
-
-<section id="rpwebsite" class="vw70">
-	<img id="web1" class="formatting shadow" alt="river parade website" src="images/riverparade/desktop_web2.jpg"><img>
-	<img id="web2" class="formatting vw70" alt="river parade mobile" src="images/riverparade/mobile_web.png"><img>
-</section>
-
-<div id="description2">
-	<p class="p1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-</div>
-
-<div class="slideshow-container">
+<div class="slideshow-container topspace">
 
 <div class="mySlides fade slides">
   <div class="numbertext">1 / 9</div>
@@ -105,6 +91,9 @@
 </div>
 <br>
 
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 <div style="text-align:center">
   <span class="dot"></span>
   <span class="dot"></span>
@@ -117,6 +106,20 @@
 						  <span class="dot"></span>
 </div>
 
+<section class="vw70">
+	<img class="topspace shadow vw70" alt="push notification app wireframe" src="images/synacor/wireframe1.png"><img>
+	<img class="smallspace shadow vw70" alt="push notification app wireframe" src="images/synacor/wireframe2.png"><img>
+</section>
+
+<div id="description2" class="topspace">
+	<p class="p1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+</div>
+
+<section class="vw70">
+	<img class="topspace vw70" alt="location settings screens" src="images/synacor/settings_screens.jpg"><img>
+	<img class="smallspace vw70" alt="push notification app wireframe" src="images/synacor/flow.jpg"><img>
+</section>
+
 <div id="bottomspace"></div>
 
 
@@ -124,6 +127,17 @@
 
 var slideIndex = 0;
 showSlides();
+
+var slideIndex = 1;
+showSlidesm(slideIndex);
+
+function plusSlides(n) {
+  showSlidesm(slideIndex += n);
+}
+
+function currentSlidem(n) {
+  showSlidesm(slideIndex = n);
+}
 
 function showSlides() {
     var i;
