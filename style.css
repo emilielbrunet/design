@@ -292,29 +292,29 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: -70px;
+  top: -9px;
   width: auto;
   padding: 6px;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
   border-radius: 0 3px 3px 0;
 	cursor: pointer;
 }
 
 .prev {
-	left: 30px;
+	left: 38%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 35px;
+  right: 38.5%;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.5);
 }
 
 
