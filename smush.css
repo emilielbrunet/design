@@ -94,11 +94,11 @@ html {
 }
 
 #headlogo {
-	width: 35vw;
-	margin-right: 32.5vw;
-	margin-left: 32vw;
+	width: 50vw;
+	margin-right: 25vw;
+	margin-left: 25vw;
 	height: auto;
-	margin-top: 35vh;
+	margin-top: 30vh;
 }
 
 #mainimg {
@@ -365,6 +365,39 @@ footer{
 			height: 25px;
 			width: 25px;
 			margin-top: 2.35vh;
+		}
+
+		.topspace {
+			margin-top: 11vw;
+		}
+
+		.smallspace {
+			margin-top: 8vw;
+		}
+
+		#video {
+			height: 45vw;
+		}
+
+
+		#mock2 {
+			width: 45vw;
+			height: 70vw;
+			background-position: center;
+			background-image: url(images/smush/mockup_view1.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#mock3 {
+			width: 45vw;
+			height: 70vw;
+			background-position: center;
+			background-image: url(images/smush/mockup_view2.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
 		}
 
 }

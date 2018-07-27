@@ -330,4 +330,26 @@ footer{
 			margin-top: 2.35vh;
 		}
 
+		.topspace {
+			margin-top: 11vw;
+		}
+
+		.smallspace {
+			margin-top: 8vw;
+		}
+
+		#icon1 {
+			margin-left: 4vw;
+		}
+
+		.icon {
+			width: 25vw;
+			display: inline-block;
+			padding: 1.5vw;
+		}
+
+		#video {
+			height: 50vw;
+		}
+
 }

@@ -93,14 +93,6 @@ html {
 	line-height:0px;
 }
 
-#headlogo {
-	width: 35vw;
-	margin-right: 32.5vw;
-	margin-left: 32vw;
-	height: auto;
-	margin-top: 35vh;
-}
-
 #mainimg {
 	background-image: url(images/feedmtl/main.png);
 	background-size: cover;
@@ -156,6 +148,7 @@ text-align: center;
 
 #logomtl {
 	margin-left: 14vw;
+	width: 30vw;
 }
 
 #visitcntd {
@@ -402,6 +395,83 @@ footer{
 			height: 25px;
 			width: 25px;
 			margin-top: 2.35vh;
+		}
+
+		.vw70 {
+			width: 80vw;
+			margin: auto;
+		}
+
+		.topspace {
+			margin-top: 11vw;
+		}
+
+		.smallspace {
+			margin-top: 8vw;
+		}
+
+		.mock {
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 80vw;
+		}
+
+		#mock2 {
+			width: 40vw;
+			height: 65vw;
+			background-position: center;
+			background-image: url(images/feedmtl/screen1.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#mock3 {
+			width: 40vw;
+			height: 65vw;
+			background-position: center;
+			background-image: url(images/feedmtl/screen2.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#mock4 {
+			width: 40vw;
+			height: 65vw;
+			background-position: center;
+			background-image: url(images/feedmtl/screen3.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#mock5 {
+			width: 40vw;
+			height: 65vw;
+			background-position: center;
+			background-image: url(images/feedmtl/screen4.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#mock6 {
+			width: 40vw;
+			height: 65vw;
+			background-position: center;
+			background-image: url(images/feedmtl/screen5.png);
+			background-size: cover;
+			margin: auto;
+			display: inline-block;
+		}
+
+		#logomtl {
+			margin-left: 14vw;
+			width: 50vw;
 		}
 
 }

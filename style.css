@@ -626,20 +626,20 @@ footer, p{
 		}
 
 		.contacttext, h1 {
-			font-size: 1em;
+			font-size: 1.45em;
 		}
 
 		.contacttext, h2 {
-			font-size: 0.8em;
+			font-size: 0.9em;
 			color: white;
 		}
 
 		a h2 {
-			width: 200px;
+			width: 220px;
 		}
 
 		a h2:hover {
-			width: 200px;
+			width: 220px;
 		}
 
 		footer{

@@ -381,7 +381,7 @@ body {font-family: Verdana, sans-serif;}
 		}
 
 		.vw70 {
-			width: 90vw;
+			width: 80vw;
 			margin: auto;
 		}
 
@@ -438,6 +438,21 @@ body {font-family: Verdana, sans-serif;}
 			height: 25px;
 			width: 25px;
 			margin-top: 2.35vh;
+		}
+
+		.topspace {
+			margin-top: 11vw;
+		}
+
+		.smallspace {
+			margin-top: 8vw;
+		}
+
+		.slideshow-container {
+		  width: 100%;
+		  position: relative;
+		  padding-right: 5vw;
+			padding-left: 5vw;
 		}
 
 }
