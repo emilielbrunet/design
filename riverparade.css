@@ -48,6 +48,7 @@ html {
 	font-weight:bold;
 }
 
+
 .overlay {
     height: 100%;
     width: 0;
@@ -137,6 +138,15 @@ text-align: center;
 .vw70 {
 	width: 60vw;
 	margin: auto;
+}
+
+#logomtl {
+	margin-left: 15vw;
+	width: 30vw;
+}
+
+.smallspace {
+	margin-top: 8vw;
 }
 
 #colours {
@@ -339,6 +349,15 @@ footer{
 			height: 23px;
 			width: 25px;
 			margin-top: -2px;
+		}
+
+		.smallspace {
+			margin-top: 8vw;
+		}
+
+		#logomtl {
+			margin-left: 20vw;
+			width: 50vw;
 		}
 
 		.social {
