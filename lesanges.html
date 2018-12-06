@@ -42,8 +42,7 @@
 </div>
 
 <section class="vw70">
-	<img class="formatting vw70" alt="logo" src="images/lesanges/logo.png"><img>
-	<img class="formatting vw70 smallspace" alt="colours" src="images/lesanges/colors.png"><img>
+	<img class="formatting vw70" alt="logo" src="images/lesanges/logo.png" style="margin-bottom:100px;">
 </section>
 
 <!-- <div id="description2" class="topspace">
@@ -51,18 +50,17 @@
 </div> -->
 
 <section class="vw70">
-		<a href="https://angesdalex.org" id="visit"><p id="visitcntd"class="formatting 70vw smallspace" >visit site &#8680;</p></a>
-<iframe class="formatting vw70" id="video" width="100%" height="auto" src="https://www.youtube.com/embed/HnuVNGmTpJo?rel=0&amp;controls=0&amp;showinfo=0loop=1&playlist=HnuVNGmTpJo" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen>
-	</iframe>
-<img class="formatting vw70 topspace shadow" alt="website" src="images/lesanges/wireframes.png"><img>
+<iframe class="formatting vw70" id="video" width="100%" height="auto" src="https://www.youtube.com/embed/HnuVNGmTpJo?rel=0&amp;controls=0&amp;showinfo=0loop=1&playlist=HnuVNGmTpJo" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+<img class="formatting vw70 topspace shadow" alt="website" src="images/lesanges/full_about.png">
+<!-- <img class="formatting vw70 topspace shadow" alt="website" src="images/lesanges/wireframes.png"> -->
 </section>
 
 <section class="vw70">
-		<img id="icon1" class="icon topspace" alt="volunteer icon" src="images/lesanges/icon1.png"><img>
-				<img class="icon topspace" alt="donate icon" src="images/lesanges/icon2.png"><img>
-						<img class="icon topspace" alt="projects icon" src="images/lesanges/icon3.png"><img>
-		<img class="formatting topspace shadow" alt="business card side 1" src="images/lesanges/cartes-01.png"><img>
-				<img class="formatting topspace shadow" alt="business card side 2" src="images/lesanges/cartes-02.png"><img>
+		<img id="icon1" class="icon topspace" alt="volunteer icon" src="images/lesanges/icon1.png">
+				<img class="icon topspace" alt="donate icon" src="images/lesanges/icon2.png">
+						<img class="icon topspace" alt="projects icon" src="images/lesanges/icon3.png">
+		<!-- <img class="formatting topspace shadow" alt="business card side 1" src="images/lesanges/cartes-01.png"> -->
+				<img class="formatting topspace shadow" alt="business card side 2" src="images/lesanges/cartes-02.png">
 </section>
 
 <div id="bottomspace"></div>
@@ -77,6 +75,11 @@
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }
+
+$(window).resize()
+
+mosaicflow_container.mosaicflow('reflow')
+
 </script>
 
 </body>
