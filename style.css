@@ -128,13 +128,13 @@ html {
 	margin: 20px;
 	cursor: pointer;
 	text-decoration: none;
+    filter: grayscale(1);
+}
+.works:hover {
+    filter: grayscale(0);
 }
 
 #work1{
-		background-image: url(images/works/carousel_web_bw.jpg);
-}
-
-#work1:hover{
 		background-image: url(images/works/carousel_web.jpg);
 }
 
@@ -146,14 +146,11 @@ html {
 }
 
 #work2{
-		background-image: url(images/works/river_parade_bw.jpg);
-		cursor: pointer;
-		text-decoration: none;
+		background-image: url(images/works/river_parade.jpg);
 }
 
 #work2:hover {
 		color:yellow;
-		background-image: url(images/works/river_parade.jpg);
 }
 
 #work2 p {
@@ -165,13 +162,9 @@ html {
 }
 
 #work3{
-		background-image: url(images/works/les_anges_web_bw.jpg);
-		cursor: pointer;
-}
-
-#work3:hover{
 		background-image: url(images/works/les_anges_web.jpg);
 }
+
 
 #work3 p {
 	color: black;
@@ -181,12 +174,8 @@ html {
 }
 
 #work4{
-		background-image: url(images/works/smush_lips_web_bw.jpg);
-		box-sizing: border-box;
-}
-
-#work4:hover{
 		background-image: url(images/works/smush_lips_web.jpg);
+		box-sizing: border-box;
 }
 
 
@@ -198,12 +187,9 @@ html {
 }
 
 #work5{
-		background-image: url(images/works/feed_bw.jpg);
-}
-
-#work5:hover {
 		background-image: url(images/works/feed.jpg);
 }
+
 
 #work5 p {
 	color: black;
@@ -213,10 +199,6 @@ html {
 }
 
 #work6{
-		background-image: url(images/works/synacor_web_bw.jpg);
-}
-
-#work6:hover {
 		background-image: url(images/works/synacor_web_.jpg);
 }
 
