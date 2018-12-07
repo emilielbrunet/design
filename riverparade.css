@@ -99,7 +99,7 @@ html {
 }
 
 #mainimg {
-	background-image: url(images/riverparade/banner1.png);
+	background-image: url(images/riverparade/banner1.jpg);
 	width: 100%;
 	height: 85vh;
 	background-size: cover;
@@ -186,6 +186,7 @@ text-align: center;
 	margin-right: 5vw;
 	margin-left: 5vw;
 	height: 100%;
+	display: block;
 }
 
 #description2 {
