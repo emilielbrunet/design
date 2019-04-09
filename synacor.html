@@ -1,171 +1,183 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html lang="en">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="synacor.css">
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
 </head>
 
 <body>
 
-    <footer>
-        <img alt="logo" id="logof" src="images/logo_white.png">
-        <p id="footerp">Émilie Brunet Design &copy;</p>
-        <a href="mailto:emilie.brunet.design@gmail.com"><img class="social" alt="email" src="images/social_icon_3.png"></a>
-        <a href="https://linkedin.com/in/émilie-brunet-95a219168"><img alt="linkedin" class="social" src="images/linkedin-02.png"></a>
-        <a href="https://www.behance.net/emiliebrun1a2e"><img alt="behance" class="social" src="images/social_icon_1.png"></a>
-    </footer>
+  <div id="header">
+      <a href="index.html"><img id="logo" alt="logo" src="images/logo.png"></a>
+      <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
+      <div id="header"></div>
+      <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
+          <img id="logo2" alt="logo" src="images/logo2.png">
+          <div class="overlay-content">
+              <a href="index.html" class="current" onclick="closeNav()">Main</a>
+              <button class="collapsible">Work</button>
+                  <div class="content">
+                    <a href="synacor.html" onclick="closeNav()">Synacor Notification App</a>
+                    <a href="smush.html" onclick="closeNav()">Smush</a>
+                    <a href="daresay.html" onclick="closeNav()">Daresay</a>
+                    <a href="fofa.html" onclick="closeNav()">FOFA Publication</a>
+                    <a href="riverparade.html" onclick="closeNav()">River Parade</a>
+                    <a href="lesanges.html" onclick="closeNav()">Les Anges d'Alex</a>
+                  </div>
+              <a href="index.html#about" class="block" onclick="closeNav()">About</a>
+              <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
+              <section id="sociallinks">
+                  <a href="https://www.behance.net/emiliebrun1a2e"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emilie-brunet-design/"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+              </section>
+          </div>
+      </nav>
+  </div>
 
-    <div id="header">
-        <a href="index.html"><img id="logo" alt="logo" src="images/logo2.jpg"></a>
+<div class="row">
+  <div class="column">
+    <img src="images/synacor/screen.gif" style="width:100%;" onclick="openModal();currentSlide(1)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/synacor/screen_1.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/synacor/screen_2.gif" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/synacor/screen_3.gif" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
 
-        <span id="mobilenav" onclick="openNav()">☰</span>
-        <div id="header"></div>
-        <nav id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <div class="overlay-content">
-                <a href="index.html" class="current" onclick="closeNav()">main</a>
-                <a href="index.html" onclick="closeNav()">work</a>
-                <a href="index.html" onclick="closeNav()">about</a>
-                <a href="index.html" onclick="closeNav()">contact</a>
-            </div>
-        </nav>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/screen.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
     </div>
 
-    <div id="mainimg"></div>
-
-    <div id="triangle3"></div>
-
-    <div id="description1">
-        <p class="p1"> At Synacor Ottawa, I was tasked with creating the redesign of an internal push notification tool. The increased efficiency and usability of the new design allowed Synacor’s development team to operate their applications for multiple major clients.</p>
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/synacor/screen_1.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
     </div>
 
-    <div class="slideshow-container topspace">
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/screen_2.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
 
-        <div class="mySlides fade slides">
-            <div class="numbertext">1 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen1.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">2 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen2.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">3 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen3.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">4 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen4.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">5 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen5.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">6 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen6.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">7 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen7.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">8 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen8.png">
-        </div>
-
-        <div class="mySlides fade slides">
-            <div class="numbertext">9 / 9</div>
-            <img class="shadow formatting" src="images/synacor/screen9.png">
-        </div>
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/screen_3.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
 
     </div>
-    <br>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
 
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+<section class="projectdesc">
+  <section class="slidetext">
+    <p class="slidetopic">UX | UI</p>
+    <p class="slidetitle">Synacor Push App</p>
+    <p class="slideppl">———designed with Synacor</p>
+  </section>
+  <div class="description">
+    <p>At Synacor Ottawa, I was tasked with creating the redesign of an internal push notification tool. The increased efficiency and usability of the new design allowed Synacor’s development team to operate their applications for multiple major clients.
+
+<br>I worked on designing location settings for the Start App, one of Synacor’s major projects for AT&T. I took these screen states through the full design process from sketches, to wireframes and user experience flow charts up to the final designs.</p>
+  </div>
+    <div>
+      <a href="smush.html" class="projnext">&#10095;</a>
     </div>
+</section>
 
-    <section class="vw70">
-        <img class="topspace shadow vw70" alt="push notification app wireframe" src="images/synacor/wireframe1.png"><img>
-        <img class="smallspace shadow vw70" alt="push notification app wireframe" src="images/synacor/wireframe2.png"><img>
-    </section>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
-    <div id="description2" class="topspace">
-        <p class="p1"> I worked on designing location settings for the Start App, one of Synacor’s major projects for AT&T. I took these screen states through the full design process from sketches, to wireframes and user experience flow charts up to the final designs.</p>
-    </div>
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
 
-    <section class="vw70">
-        <img class="topspace vw70" alt="location settings screens" src="images/synacor/settings_screens.jpg"><img>
-        <img class="smallspace vw70" alt="push notification app wireframe" src="images/synacor/flow.jpg"><img>
-    </section>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    <div id="bottomspace"></div>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
 
-        var slideIndex = 1;
-        showSlidesm(slideIndex);
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
-        function plusSlides(n) {
-            showSlidesm(slideIndex += n);
-        }
+</script>
 
-        function currentSlidem(n) {
-            showSlidesm(slideIndex = n);
-        }
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+  content.style.display = "none";
+} else {
+  content.style.display = "block";
+}
+});
+}
+</script>
 
 </body>
 </html>

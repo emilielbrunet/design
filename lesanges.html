@@ -1,85 +1,181 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html lang="en">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="lesanges.css">
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
 </head>
 
 <body>
 
-    <footer>
-        <img alt="logo" id="logof" src="images/logo_white.png">
-        <p id="footerp">Émilie Brunet Design &copy;</p>
-        <a href="mailto:emilie.brunet.design@gmail.com"><img class="social" alt="email" src="images/social_icon_3.png"></a>
-        <a href="https://linkedin.com/in/émilie-brunet-95a219168"><img alt="linkedin" class="social" src="images/linkedin-02.png"></a>
-        <a href="https://www.behance.net/emiliebrun1a2e"><img alt="behance" class="social" src="images/social_icon_1.png"></a>
-    </footer>
+  <div id="header">
+      <a href="index.html"><img id="logo" alt="logo" src="images/logo.png"></a>
+      <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
+      <div id="header"></div>
+      <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
+          <img id="logo2" alt="logo" src="images/logo2.png">
+          <div class="overlay-content">
+              <a href="index.html" class="current" onclick="closeNav()">Main</a>
+              <button class="collapsible">Work</button>
+                  <div class="content">
+                    <a href="synacor.html" onclick="closeNav()">Synacor Notification App</a>
+                    <a href="smush.html" onclick="closeNav()">Smush</a>
+                    <a href="daresay.html" onclick="closeNav()">Daresay</a>
+                    <a href="fofa.html" onclick="closeNav()">FOFA Publication</a>
+                    <a href="riverparade.html" onclick="closeNav()">River Parade</a>
+                    <a href="lesanges.html" onclick="closeNav()">Les Anges d'Alex</a>
+                  </div>
+              <a href="index.html#about" class="block" onclick="closeNav()">About</a>
+              <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
+              <section id="sociallinks">
+                  <a href="https://www.behance.net/emiliebrun1a2e"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emilie-brunet-design/"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+              </section>
+          </div>
+      </nav>
+  </div>
 
-    <div id="header">
-        <a href="index.html"><img id="logo" alt="logo" src="images/logo2.jpg"></a>
+<div class="row">
+  <div class="column">
+    <img src="images/lesanges/aa_logo.gif" style="width:100%;" onclick="openModal();currentSlide(1)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/lesanges/web_1.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/lesanges/card_3.gif" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/lesanges/icon1.gif" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+</div>
 
-        <span id="mobilenav" onclick="openNav()">☰</span>
-        <div id="header"></div>
-        <nav id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <div class="overlay-content">
-                <a href="index.html" class="current" onclick="closeNav()">main</a>
-                <a href="index.html" onclick="closeNav()">work</a>
-                <a href="index.html" onclick="closeNav()">about</a>
-                <a href="index.html" onclick="closeNav()">contact</a>
-            </div>
-        </nav>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/lesanges/aa_logo.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
     </div>
 
-    <div id="mainimg"></div>
-
-    <div id="triangle3"></div>
-
-    <div id="description1">
-        <p class="p1"> In collaboration with graphic designer Seluna Fernandez, I produced an original brand identity and website for Montreal-based charity Les Anges d’Alex.</p>
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/lesanges/web_1.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
     </div>
 
-    <section class="vw70">
-        <img class="formatting vw70" alt="logo" src="images/lesanges/logo.jpg" style="margin-bottom:100px;">
-    </section>
+    <div class="mySlides">
+      <img class="lightboximg" src="images/lesanges/card_3.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
 
-    <!-- <div id="description2" class="topspace">
-	<p class="p1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-</div> -->
+    <div class="mySlides">
+      <img class="lightboximg" src="images/lesanges/icon1.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
 
-    <section class="vw70">
-        <iframe class="formatting vw70" id="video" width="100%" height="auto" src="https://www.youtube.com/embed/HnuVNGmTpJo?rel=0&amp;controls=0&amp;showinfo=0loop=1&playlist=HnuVNGmTpJo" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
-        <img class="formatting vw70 topspace shadow" alt="website" src="images/lesanges/full_about.jpg">
-        <!-- <img class="formatting vw70 topspace shadow" alt="website" src="images/lesanges/wireframes.png"> -->
-    </section>
+    </div>
 
-    <section class="vw70">
-        <img id="icon1" class="icon topspace" alt="volunteer icon" src="images/lesanges/icon1.png">
-        <img class="icon topspace" alt="donate icon" src="images/lesanges/icon2.png">
-        <img class="icon topspace" alt="projects icon" src="images/lesanges/icon3.png">
-        <!-- <img class="formatting topspace shadow" alt="business card side 1" src="images/lesanges/cartes-01.png"> -->
-        <img class="formatting topspace shadow" alt="business card side 2" src="images/lesanges/card1.png">
-    </section>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
 
-    <div id="bottomspace"></div>
+<section class="projectdesc">
+  <section class="slidetext">
+    <p class="slidetopic">Branding | UX | UI | Graphic Design</p>
+    <p class="slidetitle">Les Anges d'Alex</p>
+    <p class="slideppl">———designed for Les Anges d'Alex</p>
+  </section>
+  <div class="description">
+    <p>In collaboration with graphic designer Seluna Fernandez, I produced an original brand identity and website for Montreal-based charity Les Anges d’Alex.</p>  </div>
+    <div>
+      <a href="riverparade.html" class="projprev">&#10094;</a>
+    </div>
+</section>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
 
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
-        $(window).resize()
+</script>
 
-        mosaicflow_container.mosaicflow('reflow')
-    </script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+  content.style.display = "none";
+} else {
+  content.style.display = "block";
+}
+});
+}
+</script>
 
 </body>
 </html>

@@ -1,0 +1,298 @@
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.italics {
+  display: inline;
+  font-style: italic;
+}
+
+.row > .column {
+  margin-bottom: 1vw;
+  height: 40vw;
+  overflow-y: hidden;
+  margin-left: 1vw
+
+}
+
+.row {
+    margin-left: 8vw;
+    margin-bottom: 1vw;
+    padding-top: 80px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 40vw;
+  overflow-x: hidden;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: 45px;
+  margin-top: 5px;
+  z-index: 99;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  width:70vh;
+  margin: auto;
+  display: block;
+}
+
+.lightboximg {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: Avenir, sans-serif;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: black;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectdesc {
+  background-color: rgba(255, 70, 62, 1.00);
+  width: 100vw;
+  padding-left: 8.5vw;
+  padding-top: 45px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.description {
+  width: 39vw;
+  margin-left: 1vw;
+  display: inline-block;
+  height: 170px;
+  color: white;
+  font-family: Avenir, sans-serif;
+}
+
+.slidetext {
+  color: white;
+  width: 40.25vw;
+  display: inline-block;
+  height: 170px;
+  overflow: hidden;
+  float: left;
+}
+
+.slidetopic {
+  font-size: 0.9em;
+  font-family: Avenir, sans-serif;
+}
+
+.slidetitle {
+  font-size: 3.5em;
+  font-family: linotype-sabon, serif;
+  line-height: normal;
+  margin-top: 0px;
+}
+
+.slideppl {
+  font-size: 0.9em;
+  font-family: Avenir, sans-serif;
+  margin-top: -55px;
+}
+
+.projprev,
+.projnext {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  margin-top: -120px;
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
+}
+
+.projnext {
+  right: 2vw;
+}
+
+.projprev {
+  left: 2vw;
+}
+
+.projnext:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.projprev:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.visitimg:hover {
+  filter: grayscale(1);
+}
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+
+
+    .row > .column {
+      margin-bottom: 5vw;
+      margin-left: 0vw;
+      height: 85vw;
+    }
+
+    .row {
+        margin-left: 7vw;
+        margin-bottom: 5vw;
+        padding-top: 80px;
+    }
+
+    .column {
+      width: 85vw;
+    }
+
+    .projectdesc {
+      height: auto;
+      padding-bottom: 30px;
+    }
+
+    .description {
+      width: 90%;
+      margin-left: 0vw;
+      display: block;
+      height: auto;
+    }
+
+    .slidetext {
+      width: 90%;
+      height: auto;
+      display: block;
+    }
+
+    .projprev,
+    .projnext {
+      padding: 10px;
+      margin-top: -18px;
+    }
+
+    .projnext {
+      right: 1.5vw;
+    }
+
+    .projprev {
+      left: 1.5vw;
+    }
+
+    .modal-content {
+      width: 85vw;
+      max-width: 750px;
+      overflow: hidden;
+    }
+
+    .lightboximg {
+      margin-top: 15vh;
+      height: 85vw;
+      width: 85vw;
+    }
+
+    .caption {
+      width: 75vw;
+    }
+
+  }

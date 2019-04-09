@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
+</head>
+
+<body>
+
+  <div id="header">
+      <a href="index.html"><img id="logo" alt="logo" src="images/logo.png"></a>
+      <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
+      <div id="header"></div>
+      <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
+          <img id="logo2" alt="logo" src="images/logo2.png">
+          <div class="overlay-content">
+              <a href="index.html" class="current" onclick="closeNav()">Main</a>
+              <button class="collapsible">Work</button>
+                  <div class="content">
+                    <a href="synacor.html" onclick="closeNav()">Synacor Notification App</a>
+                    <a href="smush.html" onclick="closeNav()">Smush</a>
+                    <a href="daresay.html" onclick="closeNav()">Daresay</a>
+                    <a href="fofa.html" onclick="closeNav()">FOFA Publication</a>
+                    <a href="riverparade.html" onclick="closeNav()">River Parade</a>
+                    <a href="lesanges.html" onclick="closeNav()">Les Anges d'Alex</a>
+                  </div>
+              <a href="index.html#about" class="block" onclick="closeNav()">About</a>
+              <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
+              <section id="sociallinks">
+                  <a href="https://www.behance.net/emiliebrun1a2e"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emilie-brunet-design/"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+              </section>
+          </div>
+      </nav>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <img src="images/daresay/daresay_landing.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/daresay/daresay_download.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="cursor">
+  </div>
+  <div class="column">
+    <img src="images/daresay/cheat_sheet.jpg" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+  <div class="column">
+    <a class="visitsite" target="_blank" href="http://daresay.ca/"><img class="visitimg" src="images/daresay/daresay_arrow.jpg" style="width:100%; border: black solid 2px;" class="cursor"></a>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/daresay/daresay_landing.jpg">
+      <div class="caption-container">
+        <p class="caption">daresay.ca is a website that allows for people to learn about, try out and download the font.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/daresay/daresay_download.jpg">
+      <div class="caption-container">
+        <p class="caption">Short description of the font and a link to download it for free.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/daresay/cheat_sheet.jpg">
+      <div class="caption-container">
+        <p class="caption">Glossary of keyboard shortcuts for the font's symbols and alternative punctuation marks.</p>
+      </div>
+    </div>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+
+<section class="projectdesc">
+  <section class="slidetext">
+    <p class="slidetopic">Type Design | UX | UI</p>
+    <p class="slidetitle">Daresay Typeface</p>
+    <p class="slideppl">———designed at Concordia University</p>
+  </section>
+  <div class="description">
+    <p>
+      Daresay is a unicase serif typeface that I designed to start discussions relating to feminism. It is unique in that it has been made only in lowercase letterforms, and symbols have been created in the place of capital letters. This disruption of grammar conventions catalyzes a shift in the perceptions of language and visually inhibits yelling—leading to more democratic conversations. The end result is an accessible font that has the potential for use in myriad contexts to communicate thought, stories and ideas with unique type treatments.
+    </p>
+  </div>
+    <div>
+      <a href="smush.html" class="projprev">&#10094;</a>
+      <a href="fofa.html" class="projnext">&#10095;</a>
+    </div>
+</section>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+  content.style.display = "none";
+} else {
+  content.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+#logo2 {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: -0.5vw;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 1vw;
+    position: fixed;
+    z-index: 3;
+}
+
+#mobilenav {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 1.2vw;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.closebtn {
+    position: absolute;
+    right: 1.2vw;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    margin:0;
+    cursor: pointer;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+	text-decoration: none;
+	font-size: 3em;
+	color: white;
+	transition: 0.3s;
+  font-weight: 100;
+  font-family: linotype-sabon, serif;
+	border: none;
+	border-style: hidden;
+	shadow: none;
+	background-color: rgba(255, 204, 183, 0);
+	outline: 0;
+  padding-top: 18px;
+
+}
+
+.collapsible:visited {
+	outline: 0;
+	background-color: rgba(255, 204, 183, 0);
+}
+
+.collapsible:link {
+	outline: 0;
+	background-color: rgba(255, 204, 183, 0);
+}
+
+.collapsible:hover {
+	color: rgba(255, 204, 183, 0.75);
+	border: none;
+	border-style: hidden;
+	shadow: hidden;
+	background-color: rgba(255, 204, 183, 0);
+	outline: 0;
+}
+
+.collapsible:active {
+	color: rgba(255, 204, 183, 1.00);
+	border: none;
+	border-style: hidden;
+	shadow: hidden;
+	background-color: rgba(255, 204, 183, 0);
+	outline: 0;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  font-family: Avenir, sans-serif;
+  font-size: 8px;
+  font-weight: normal;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 70, 62, 1.00);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    margin-top: 30px;
+    /*border:1px solid red;*/
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    transition: 0.2s;
+    font-weight: normal;
+    font-family: linotype-sabon, sans-serif;
+}
+
+.block {
+  display: block;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: rgba(255, 204, 183, 0.75);
+}
+
+#sociallinks {
+ margin: auto;
+}
+
+
+.social {
+    height: 40px;
+    width: 40px;
+    margin-top: 2.35vh;
+    margin-left: 10px;
+}
+
+.social:hover {
+  opacity: 0.6;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+
+		.overlay a {
+		    padding: 15px;
+		    font-size: 2em;
+        line-height: 30pt;
+		}
+
+		.collapsible {
+			padding: 15px;
+      margin-top: 15px;
+			font-size: 2em;
+      line-height: 30pt;
+		}
+
+		.content {
+			padding: 15px;
+			font-size: 0.6em;
+		}
+
+    #logo2 {
+      margin-left: -3vw;
+    }
+
+    #logo {
+        margin-left: 3.5vw;
+    }
+
+    #mobilenav {
+      right: 2.75vw;
+    }
+
+    .closebtn {
+        right: 2.75vw;
+    }
+
+
+}
