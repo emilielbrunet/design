@@ -372,6 +372,7 @@ h2 {
     font-weight: normal;
     line-height: 20pt;
     color: white;
+    cursor: pointer;
 }
 
 a h2 {
@@ -380,6 +381,11 @@ a h2 {
 }
 
 a h2:hover {
+  color: white;
+}
+
+a h2:visited {
+  color: white;
 }
 
 #annoyinga {
@@ -469,11 +475,15 @@ a h2:hover {
         color: white;
     }
 
+    h2:visited{
+      color: white;
+    }
+
     .slideshow-container {
         width: 92vw;
         height: 80vh;
         top: 11vh;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .slideimgs {
@@ -527,11 +537,11 @@ a h2:hover {
     }
 
     #slideriver{
-      overflow-x:auto;
+      overflow-x:visible;
     }
 
     #slideanges{
-      overflow-x: auto;
+      overflow-x: visible;
     }
 
   }
