@@ -139,12 +139,7 @@ body {
 #slideriver{
   width: 80vw;
   height: 70vh;
-  background-color: #D6DEDE;
-}
-
-#slideriver{
-  width: 80vw;
-  height: 70vh;
+  overflow-x: hidden;
   background-color: #d6dede;
 }
 
@@ -157,6 +152,7 @@ body {
 #slideanges{
   width: 80vw;
   height: 70vh;
+  overflow-x: hidden;
   background-color: #d7ecee;
 }
 
@@ -528,6 +524,14 @@ a h2:hover {
 
     #triangle2 {
       transform: translateY(-81px) rotate(180deg);
+    }
+
+    #slideriver{
+      overflow-x:auto;
+    }
+
+    #slideanges{
+      overflow-x: auto;
     }
 
   }
