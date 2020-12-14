@@ -299,7 +299,8 @@ body {
   display: inline-block;
   margin-left: 5vw;
   width: 30vw;
-  margin-top: 5vw;
+  margin-top: 2vw;
+  margin-bottom: auto;
   text-align: left;
   line-height: 24px;
 
