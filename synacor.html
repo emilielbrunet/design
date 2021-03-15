@@ -27,12 +27,12 @@
               <a href="index" class="current" onclick="closeNav()">Main</a>
               <button class="collapsible">Work</button>
                   <div class="content">
-                    <a href="synacor" onclick="closeNav()">Synacor Notification App</a>
+                    <a href="synacor" onclick="closeNav()">Synacor Push Notification Tool</a>
                     <a href="cbs" onclick="closeNav()">Type to save a life</a>
                     <a href="daresay" onclick="closeNav()">Daresay</a>
-                    <a href="fofa" onclick="closeNav()">FOFA Publication</a>
-                    <a href="faces.html" onclick="closeNav()">FACES</a>
-                    <a href="cujah" onclick="closeNav()">CUJAH</a>
+                    <a href="fofa" onclick="closeNav()">Material Trace</a>
+                    <a href="faces.html" onclick="closeNav()">FACES Magazine</a>
+                    <a href="cujah" onclick="closeNav()">CUJAH XV</a>
                   </div>
               <a href="index.html#about" class="block" onclick="closeNav()">About</a>
               <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
@@ -46,39 +46,79 @@
       </nav>
   </div>
 
+  <section class="projectdesc">
+    <section class="slidetext">
+      <p class="slidetopic">UX | UI</p>
+      <p class="slidetitle">Synacor Push <br> Notification Tool</p>
+      <p class="slideppl">———designed with Synacor</p>
+    </section>
+
+    <div class="description">
+      <p>During my time at with Synacor, a technology and services company based out of Buffalo New York, I had the opportunity to redesign the user interface of the backend push notification publishing tool for one of their new products. The product, Start App, was an app-based experience for access to a daily source of curated news and entertainment with a focus on short form video consumption on mobile devices. Synacor required a redesign of the application’s push notification publishing tool that would be used by developers to set up alerts through the app. The new design would need to be streamlined and intuitive, with each step clearly laid out so as to ensure optimal efficiency when used by the developers.
+      </p>
+    </div>
+  </section>
+
+  <div id="headerimgright"><img class="headerimg" src="images/synacor/headerimg2.jpg"></div>
+
 <div class="row">
+  <div class="minidesc"><p id="minidesc1">One of the issues with the previous design was that the distinction between sending out a notification versus sending out a test was not made very clear. The new design would need to include a clear system for this process to ensure no mistakes were made when sending out notifications. My role was to rethink this older design to make it more user-friendly and less susceptible to errors.
+</p></div>
   <div class="column">
-    <img src="images/synacor/screen.gif" style="width:100%;" onclick="openModal();currentSlide(1)" class="cursor">
+    <img src="images/synacor/old_design.gif" style="height:100%" onclick="openModal();currentSlide(1)" class="cursor">
+  </div>
+  <div class="minidesc"><p id="minidesc2">
+   I took the Start App push notification publishing tool through the complete design process; from wireframes to the final prototype.
+</p></div>
+  <div class="column">
+    <img src="images/synacor/synacor_wf.gif" style="height:100%" onclick="openModal();currentSlide(2)" class="cursor">
   </div>
   <div class="column">
-    <img src="images/synacor/synacor_01.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="cursor">
+    <img src="images/synacor/synacor_01.gif" style="width:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+    <div class="minidesc"><p id="minidesc3">
+  I increased efficiency by dividing the steps into separate pages and used bold colours as indicators of important interactive elements and text.
+</p></div>
+  <div class="column">
+    <img src="images/synacor/screen_1.gif" style="height:100%" onclick="openModal();currentSlide(4)" class="cursor">
   </div>
   <div class="column">
-    <img src="images/synacor/screen_1.gif" style="height:100%" onclick="openModal();currentSlide(3)" class="cursor">
+    <img src="images/synacor/screen_2.gif" style="height:100%" onclick="openModal();currentSlide(5)" class="cursor">
+  </div>
+  <div class="minidesc"><p id="minidesc3">
+In the final screen, when the notification would be ready to send out, the user would see a colour coded message indicating whether or not the notification had been successfully deployed. These changes allowed the developers to move swiftly through the process of deploying a notification through the app with less margin for error.
+</p></div>
+  <div class="column">
+    <img src="images/synacor/screen_4.gif" style="height:100%" onclick="openModal();currentSlide(6)" class="cursor">
   </div>
   <div class="column">
-    <img src="images/synacor/screen_2.gif" style="height:100%" onclick="openModal();currentSlide(4)" class="cursor">
+    <img src="images/synacor/screen_5.gif" style="height:100%" onclick="openModal();currentSlide(7)" class="cursor">
   </div>
   <div class="column">
-    <img src="images/synacor/screen_3.gif" style="height:100%" onclick="openModal();currentSlide(5)" class="cursor">
-  </div>
-  <div class="column">
-    <img src="images/synacor/synacor_wf.gif" style="height:100%" onclick="openModal();currentSlide(6)" class="cursor">
+    <img src="images/synacor/screen_3.gif" style="height:100%" onclick="openModal();currentSlide(8)" class="cursor">
   </div>
 
+
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <span class="close cursor" id="x" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
-      <img class="lightboximg" src="images/synacor/screen.gif">
+      <img  class="lightboximg" src="images/synacor/old_design.gif">
       <div class="caption-container">
-        <p class="caption"></p>
+        <p class="caption">The original design for the push notification publishing tool (pictured above) had everything on one page, resulting in certain steps getting missed or overlooked.</p>
       </div>
     </div>
 
     <div class="mySlides">
-      <img  class="lightboximg" src="images/synacor/synacor_01.gif">
+      <img class="lightboximg" src="images/synacor/synacor_wf.gif">
+      <div class="caption-container">
+        <p class="caption">I designed wireframes for the push notification publishing tool to test out the new improved user flow.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/synacor_01.gif">
       <div class="caption-container">
         <p class="caption"></p>
       </div>
@@ -87,12 +127,26 @@
     <div class="mySlides">
       <img class="lightboximg" src="images/synacor/screen_1.gif">
       <div class="caption-container">
-        <p class="caption"></p>
+        <p class="caption">The new design would include the option to preview notifications as they would appear on both Android and IOS.</p>
       </div>
     </div>
 
     <div class="mySlides">
       <img class="lightboximg" src="images/synacor/screen_2.gif">
+      <div class="caption-container">
+        <p class="caption">A step was introduce to easily send the notification for either testing or production.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/screen_4.gif">
+      <div class="caption-container">
+        <p class="caption">Using bold colour indicators on the final screen made it clear to developers whether or not the notification had deployed successfully.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/synacor/screen_5.gif">
       <div class="caption-container">
         <p class="caption"></p>
       </div>
@@ -105,13 +159,6 @@
       </div>
     </div>
 
-    <div class="mySlides">
-      <img class="lightboximg" src="images/synacor/synacor_wf.gif">
-      <div class="caption-container">
-        <p class="caption"></p>
-      </div>
-    </div>
-
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -119,21 +166,9 @@
   </div>
 </div>
 
-<section class="projectdesc">
-  <section class="slidetext">
-    <p class="slidetopic">UX | UI</p>
-    <p class="slidetitle">Synacor Push App</p>
-    <p class="slideppl">———designed with Synacor</p>
-  </section>
-  <div class="description">
-    <p>At Synacor Ottawa, I was tasked with creating the redesign of an internal push notification tool. The increased efficiency and usability of the new design allowed Synacor’s development team to operate their applications for multiple major clients.
-
-<br>I worked on designing location settings for the Start App, one of Synacor’s major projects for AT&T. I took these screen states through the full design process from sketches, to wireframes and user experience flow charts up to the final designs.</p>
-  </div>
-    <div>
-      <a href="cbs" class="projnext">&#10095;</a>
-    </div>
-</section>
+<div id="footerbar">
+  <a href="cbs.html" class="projnext">Type to save a life &#10095;</a>
+</div>
 
 <script>
 function openModal() {
