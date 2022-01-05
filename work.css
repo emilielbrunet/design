@@ -39,6 +39,10 @@ body {
   margin-bottom: 15px;
 }
 
+#background-video {
+width: 60vw;
+}
+
 #footerbar {
   height: 8vh;
   width: 60vw;
@@ -404,6 +408,10 @@ font-style: normal;
 
     .headerimg3{
       border-top: solid 1px #000000;
+    }
+
+    #background-video {
+    width: 100vw;
     }
 
 
