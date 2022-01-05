@@ -198,8 +198,12 @@ color: #5C61FF;
 		.content1 {
 			padding: 8px;
       line-height: 2;
-			font-size: 0.9em;
+			font-size: 1.2em;
 		}
+
+    .content1 a{
+      display: block;
+    }
 
 
     #logo2 {
