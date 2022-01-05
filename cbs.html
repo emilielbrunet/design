@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkh4rin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
 </head>
@@ -17,30 +18,31 @@
 <body>
 
   <div id="header">
-      <a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
+      <div id="navbar"><a href="index"><img id="logo" alt="logo" src="images/arrow2.png"></a>
       <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
-      <div id="header"></div>
+      </div>
       <nav id="myNav" class="overlay">
           <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
           <img id="logo2" alt="logo" src="images/logo2.png">
           <div class="overlay-content">
-              <a href="index" class="current" onclick="closeNav()">Main</a>
-              <button class="collapsible">Work</button>
-                  <div class="content">
-                    <a href="synacor" onclick="closeNav()">Synacor Push Notification Tool</a>
-                    <a href="cbs" onclick="closeNav()">Type to save a life</a>
-                    <a href="daresay" onclick="closeNav()">Daresay</a>
-                    <a href="fofa" onclick="closeNav()">Material Trace</a>
-                    <a href="faces.html" onclick="closeNav()">FACES Magazine</a>
+              <a href="index" class="current major" onclick="closeNav()">Main</a>
+              <button class="collapsible major">Work</button>
+                  <div class="content1">
+                    <a href="montfort" onclick="closeNav()">Montfort Foundation</a>
+                    <a href="opha" onclick="closeNav()">OPHA</a>
+                    <a href="ohh" onclick="closeNav()">Orléans Health Hub</a>
+                    <a href="cbs" onclick="closeNav()">Type to Save a Life</a>
+                    <a href="faces" onclick="closeNav()">FACES Magazine</a>
+                    <a href="daresay" onclick="closeNav()">daresay</a>
                     <a href="cujah" onclick="closeNav()">CUJAH XV</a>
+                    <a href="synacor" onclick="closeNav()">Synacor</a>
                   </div>
-              <a href="index.html#about" class="block" onclick="closeNav()">About</a>
-              <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
-              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" class="block" onclick="closeNav()">CV</a>
+              <a href="index.html#contact" class="block major" onclick="closeNav()">Contact</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="block major" onclick="closeNav()">CV</a>
               <section id="sociallinks">
-                  <a href="https://www.behance.net/emiliebrunetdesign/"><img class="social" alt="behance icon" src="images/behance.png"></a>
-                  <a href="https://www.instagram.com/emiliebrunetdesign/"><img class="social" alt="instagram icon" src="images/insta.png"></a>
-                  <a href="https://www.linkedin.com/in/emilie-brunet-design/"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+                  <a href="https://www.behance.net/emiliebrunetdesign/"target="_blank"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"target="_blank"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emiliebrunetdesign/"target="_blank"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
               </section>
           </div>
       </nav>
@@ -48,7 +50,7 @@
 
   <section class="projectdesc">
     <section class="slidetext">
-      <p class="slidetopic">Graphic Design</p>
+      <p class="slidetopic">Digital Advertising | Graphic Design</p>
       <p class="slidetitle">Type to save a life</p>
       <p class="slideppl">———designed at Canadian Blood Services</p>
     </section>
@@ -58,7 +60,7 @@
     </div>
   </section>
 
-  <div id="headerimgright"><img class="headerimg" src="images/cbs/headerimg.gif"></div>
+  <div id="headerimgright"><img class="headerimg headerimg3" src="images/cbs/headerimg.gif"></div>
 
 <div class="row">
   <div class="column">
@@ -83,7 +85,7 @@
 </div>
 
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <span class="close" style="cursor:pointer" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
@@ -137,7 +139,7 @@
 
 <div id="footerbar">
   <!-- <a href="synacor.html" class="projprev">&#10094;</a> -->
-  <a href="daresay.html" class="projnext">Daresay &#10095;</a>
+  <a href="faces" class="projnext">FACES Magazine ⇨</a>
 </div>
 
 <script>

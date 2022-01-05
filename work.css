@@ -1,6 +1,8 @@
 
 body {
   margin: 0;
+  background: #FBF5EF;
+  cursor: url('images/cursor.png'), auto;
 }
 
 * {
@@ -12,19 +14,35 @@ body {
   font-style: italic;
 }
 
+.cursor {
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  cursor: pointer;
+}
+
 .row > .column {
   width: 60vw;
   height: 60vw;
   float: right;
   overflow: hidden;
-  margin-bottom: 5px;
+}
+
+.column{
+  margin-bottom: 15px;
+}
+
+.row > .column2 {
+  width: 60vw;
+  height: auto;
+  float: right;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 #footerbar {
   height: 8vh;
   width: 60vw;
   float: right;
-  background-color: rgba(255, 70, 62, 1.00);
   margin-top: -18px;
   padding-top: 1px;
 }
@@ -34,7 +52,19 @@ body {
   height: 100vh;
   overflow: hidden;
   float: right;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+#headerimgright2 {
+  width: 60vw;
+  overflow: hidden;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.headerimg3{
+  cursor: pointer;
+  border-bottom: solid 1px #000000;
 }
 
 .headerimg {
@@ -45,13 +75,23 @@ body {
 .row {
     margin-left: 8vw;
     margin-bottom: 1vw;
-    padding-top: 1vw;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.projectlink {
+  text-decoration:underline;
+  color: #000000;
+  font-family:Avenir,sans-serif;
+  font-size:0.9em; font-weight:bold;
+}
+
+.projectlink:hover {
+  font-style: italic;
 }
 
 /* The Modal (background) */
@@ -65,7 +105,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: white;
+  background-color: #FBF5EF;
 }
 
 /* Modal Content */
@@ -79,9 +119,9 @@ body {
 
 /* The Close Button */
 .close {
-  color: black;
+  color: #000000;
   position: absolute;
-  top: 10px;
+  top: 10vh;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
@@ -92,7 +132,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -109,10 +149,6 @@ body {
   width: 100%;
 }
 
-.cursor {
-  cursor: pointer;
-}
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -122,14 +158,15 @@ body {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: black;
-  font-weight: bold;
+  color: #000000;
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  font-family: Linotype-sabon, serif;
+  font-family: monarcha, serif;
+font-weight: bold;
+font-style: normal;
 }
 
 /* Position the "next button" to the right */
@@ -138,7 +175,6 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -147,7 +183,7 @@ body {
 .caption-container {
   text-align: center;
   padding: 2px 16px;
-  color: black;
+  color: #000000;
 }
 
 .demo {
@@ -164,41 +200,46 @@ body {
 }
 
 .projectdesc {
-  background-color: white;
   width: 40vw;
   float: left;
   height: 100vh;
   position: fixed;
   padding: 3vw;
   overflow-y: scroll;
+  border-right: #000000 solid 1.5px;
 }
 
 .description {
   display: inline-block;
-  color: black;
+  color: #000000;
   font-size: 0.9em;
   font-family: Avenir, sans-serif;
 }
 
 .slidetext {
-  color: rgba(255, 70, 62, 1.00);
   width: 40.25vw;
   display: inline-block;
   height: auto;
   float: left;
+  color: #000000;
+  margin-top: 20px;
 }
 
 .slidetopic {
   font-size: 0.9em;
   font-family: Avenir, sans-serif;
-  padding-top: 4vw;
+  padding-top: 2vw;
+    color: #000000;
 }
 
 .slidetitle {
-  font-size: 2.5em;
-  font-family: linotype-sabon, serif;
-  line-height: normal;
-  margin-top: 1vw;
+  font-size: 3em;
+  font-family: monarcha, serif;
+    color: #000000;
+font-weight: bold;
+font-style: normal;
+  line-height: 1.10;
+  margin-top: 0.5vw;
 }
 
 .slideppl {
@@ -213,11 +254,10 @@ body {
   padding: 3vw;
   font-size: 0.9em;
   font-family: Avenir, sans-serif;
-  background-color: white ;
-  color: black;
+  background-color: #FBF5EF ;
+  color: #000000;
   margin-top: -5px;
   margin-bottom: 0px;
-  border-left: 1.5px #ededed solid;
 }
 
 .projprev,
@@ -226,7 +266,7 @@ body {
   position: absolute;
   width: auto;
   padding: 11px;
-  color: white;
+  color: #000000;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   text-decoration: none;
@@ -246,15 +286,24 @@ body {
 }
 
 .projnext:hover {
-  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .projprev:hover {
-  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
 }
 
 .visitimg:hover {
   opacity: 70%;
+}
+
+.contacttext,a h2 {
+    text-decoration: underline;
+}
+
+.contacttext,a h2:hover {
+  font-style: italic;
 }
 
 @media screen and (max-width: 800px) {
@@ -266,13 +315,12 @@ body {
       height: auto;
       padding: 4vw;
       margin-top: 0px;
-      border-left: 0px #ededed solid;
     }
 
     #headerimgright {
       width: 100vw;
       height: 80vw;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       display: block;
     }
 
@@ -288,6 +336,16 @@ body {
     .row > .column {
       width: 100vw;
       height: 100vw;
+      display: block;
+    }
+
+    #headerimgright2 {
+      width: 100vw;
+      display: block;
+    }
+
+    .row > .column2 {
+      width: 100vw;
       display: block;
     }
 
@@ -343,5 +401,10 @@ body {
     .caption {
       width: 75vw;
     }
+
+    .headerimg3{
+      border-top: solid 1px #000000;
+    }
+
 
   }

@@ -1,25 +1,42 @@
+#header {
+    max-width: 100vw;
+}
+
+
+#navbar {
+  background-color: #FBF5EF;
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  z-index: 3;
+  border-bottom: solid 1.5px #000000;
+  top: 0;
+}
+
 #logo2 {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
+  width: auto;
+  height: 6vh;
+  margin-top: 1vh;
   margin-left: -0.5vw;
+  opacity: 0;
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
+    width: auto;
+    height: 6vh;
+    margin-top: 1vh;
+    margin-bottom: 20px;
     margin-left: 1vw;
     position: fixed;
     z-index: 3;
 }
 
 #mobilenav {
-  width: 50px;
-  height: 50px;
+  width: 6vh;
+  height: 6vh;
   position: fixed;
   right: 1.2vw;
-  margin-top: 10px;
+  margin-top: 1vh;
   cursor: pointer;
   z-index: 3;
 }
@@ -27,9 +44,9 @@
 .closebtn {
     position: absolute;
     right: 1.2vw;
-    top: 10px;
-    width: 50px;
-    height: 50px;
+    top: 1vh;
+    width: 6vh;
+    height: 6vh;
     margin:0;
     cursor: pointer;
 }
@@ -38,55 +55,58 @@
   cursor: pointer;
   width: 100%;
 	text-decoration: none;
-	font-size: 3em;
-	color: white;
+	font-size: 4em;
+	color: #5C61FF;
 	transition: 0.3s;
-  font-weight: 100;
-  font-family: linotype-sabon, serif;
+  font-family: monarcha, serif;
+font-weight: bold;
+font-style: normal;
 	border: none;
 	border-style: hidden;
 	shadow: none;
-	background-color: rgba(255, 204, 183, 0);
 	outline: 0;
-  padding-top: 18px;
+  padding-top: 16px;
+  background-color: #D6D8FF;
 
 }
 
 .collapsible:visited {
 	outline: 0;
-	background-color: rgba(255, 204, 183, 0);
 }
 
 .collapsible:link {
 	outline: 0;
-	background-color: rgba(255, 204, 183, 0);
 }
 
 .collapsible:hover {
-	color: rgba(255, 204, 183, 0.75);
+	color: #5C61FF;
 	border: none;
 	border-style: hidden;
+  font-style: italic;
 	shadow: hidden;
-	background-color: rgba(255, 204, 183, 0);
 	outline: 0;
+  background-color: #D6D8FF;
 }
 
 .collapsible:active {
-	color: rgba(255, 204, 183, 1.00);
+	color: #5C61FF;
 	border: none;
 	border-style: hidden;
 	shadow: hidden;
-	background-color: rgba(255, 204, 183, 0);
 	outline: 0;
 }
 
-.content {
+.content1 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  font-family: Avenir, sans-serif;
-  font-size: 8px;
+  font-family: Avenir Next, sans-serif;
+  font-size: 1.25em;
   font-weight: normal;
+}
+
+.content1 a:visited {
+  color: #5C61FF;
 }
 
 .overlay {
@@ -96,36 +116,43 @@
     z-index: 11;
     top: 0;
     left: 0;
-    background-color: rgba(255, 70, 62, 1.00);
+    background-color: #D6D8FF;
     overflow-x: hidden;
     transition: 0.5s;
+      cursor: url('images/cursor2.png'), auto;
 }
 
 .overlay-content {
     position: relative;
     top: 10%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     /*border:1px solid red;*/
 }
 
 .overlay a {
     padding: 10px;
-    text-decoration: none;
-    font-size: 3em;
-    color: white;
     transition: 0.2s;
-    font-weight: normal;
-    font-family: linotype-sabon, sans-serif;
+    text-decoration: none;
+
 }
 
 .block {
   display: block;
 }
 
+.major{
+  font-family: monarcha, serif;
+font-weight: bold;
+font-style: normal;
+font-size: 4em;
+color: #5C61FF;
+}
+
 .overlay a:hover,
 .overlay a:focus {
-    color: rgba(255, 204, 183, 0.75);
+    color: #5C61FF;
+    font-style: italic;
 }
 
 #sociallinks {
@@ -141,7 +168,7 @@
 }
 
 .social:hover {
-  opacity: 0.6;
+  opacity: 50%
 }
 
 /* On smaller screens, decrease text size */
@@ -155,36 +182,43 @@
 
 		.overlay a {
 		    padding: 15px;
-		    font-size: 2em;
-        line-height: 30pt;
 		}
+
+    .major {
+      font-size: 3em;
+      line-height: 1;
+    }
 
 		.collapsible {
 			padding: 15px;
-      margin-top: 15px;
-			font-size: 2em;
+      margin-top: 10px;
       line-height: 30pt;
 		}
 
-		.content {
-			padding: 15px;
-			font-size: 0.6em;
+		.content1 {
+			padding: 8px;
+      line-height: 2;
+			font-size: 0.9em;
 		}
+
 
     #logo2 {
       margin-left: -3vw;
+      margin-top: 18px;
     }
 
     #logo {
         margin-left: 3.5vw;
+        height: 6vh;
+        margin-top: 1vh;
     }
 
     #mobilenav {
-      right: 2.75vw;
+      right: 3vw;
     }
 
     .closebtn {
-        right: 2.75vw;
+        right: 3vw;
     }
 
 

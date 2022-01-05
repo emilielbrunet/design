@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkh4rin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
 </head>
@@ -16,188 +17,146 @@
 <body>
 
   <div id="header">
-      <a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
+      <div id="navbar"><a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
       <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
-      <div id="header"></div>
+      </div>
       <nav id="myNav" class="overlay">
           <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
           <img id="logo2" alt="logo" src="images/logo2.png">
           <div class="overlay-content">
-              <a href="index" class="current" onclick="closeNav()">Main</a>
-              <button class="collapsible">Work</button>
-                  <div class="content">
-                    <a href="synacor" onclick="closeNav()">Synacor Push Notification Tool</a>
-                    <a href="cbs" onclick="closeNav()">Type to save a life</a>
-                    <a href="daresay" onclick="closeNav()">Daresay</a>
-                    <a href="fofa" onclick="closeNav()">Material Trace</a>
-                    <a href="faces.html" onclick="closeNav()">FACES Magazine</a>
+              <a href="index" class="current major" onclick="closeNav()">Main</a>
+              <button class="collapsible major">Work</button>
+                  <div class="content1">
+                    <a href="montfort" onclick="closeNav()">Montfort Foundation</a>
+                    <a href="opha" onclick="closeNav()">OPHA</a>
+                    <a href="ohh" onclick="closeNav()">Orléans Health Hub</a>
+                    <a href="cbs" onclick="closeNav()">Type to Save a Life</a>
+                    <a href="faces" onclick="closeNav()">FACES Magazine</a>
+                    <a href="daresay" onclick="closeNav()">daresay</a>
                     <a href="cujah" onclick="closeNav()">CUJAH XV</a>
+                    <a href="synacor" onclick="closeNav()">Synacor</a>
                   </div>
-              <a href="index.html#about" class="block" onclick="closeNav()">About</a>
-              <a href="index.html#contact" class="block" onclick="closeNav()">Contact</a>
-              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" class="block" onclick="closeNav()">CV</a>
+              <a href="index.html#contact" class="block major" onclick="closeNav()">Contact</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="block major" onclick="closeNav()">CV</a>
               <section id="sociallinks">
-                  <a href="https://www.behance.net/emiliebrunetdesign/"><img class="social" alt="behance icon" src="images/behance.png"></a>
-                  <a href="https://www.instagram.com/emiliebrunetdesign/"><img class="social" alt="instagram icon" src="images/insta.png"></a>
-                  <a href="https://www.linkedin.com/in/emiliebrunetdesign/"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+                  <a href="https://www.behance.net/emiliebrunetdesign/"target="_blank"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"target="_blank"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emiliebrunetdesign/"target="_blank"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
               </section>
           </div>
       </nav>
   </div>
 
-    <section id="topholder">
-        <div class="slideshow-container">
-
-            <div id="slidesynacor" class="mySlides fade">
-                <a href="synacor"><img src="slides/slide2.jpg" style="float:right;" alt="Synacor Push Notification App" class="slideimgs">
-                  <img src="slides/mobile/slide2.gif" alt="Synacor Push Notification App" class="mobileslideimgs">
-                <section class="slidetext2">
-                  <p class="slidetopic">UX | UI</p>
-                  <p class="slidetitle">Synacor Push <br> Notification Tool</p>
-                  <p class="slideppl">———designed with Synacor</p>
-                </section>
-            </a></div>
-
-            <div id="slidesmush" class="mySlides fade">
-                <a href="cbs"><img src="slides/slide1.gif" alt="CBS" class="slideimgs">
-                  <img src="slides/mobile/slide1.png" alt="CBS" class="mobileslideimgs">
-                  <section class="slidetext2">
-                  <p class="slidetopic">Graphic Design</p>
-                  <p class="slidetitle">Type to <br> save a life</p>
-                  <p class="slideppl">———designed at Canadian Blood Services</p>
-                  </section>
-            </a></div>
-
-            <div id="slidesisterhood" class="mySlides fade">
-              <a href="daresay">  <img src="slides/slide3.gif" alt="Daresay" class="slideimgs">
-                <img src="slides/mobile/slide3.gif" alt="Daresay" class="mobileslideimgs">
-                <section class="slidetext2">
-                  <p class="slidetopic">Type Design | UX | UI</p>
-                  <p class="slidetitle">Daresay Typeface</p>
-                  <p class="slideppl">———designed at Concordia University</p>
-                </section>
-            </a></div>
-
-            <div id="slideriver" class="mySlides fade">
-              <a href="faces.html"><img src="slides/slide4.gif" alt="Faces Magazine" class="slideimgs">
-                <img src="slides/mobile/slide4.gif" alt="Faces" class="mobileslideimgs">
-                <section class="slidetext2">
-                  <p class="slidetopic">Graphic Design</p>
-                  <p class="slidetitle">FACES Magazine</p>
-                  <p class="slideppl">———designed for FACES Magazine</p>
-                </section>
-          </a>  </div>
-
-            <div id="slidefofa" class="mySlides fade">
-                <a href="fofa"><img src="slides/slide5.jpg" alt="USE Catalogue" class="slideimgs">
-                  <img src="slides/mobile/slide5.gif" alt="USE Catalogue" class="mobileslideimgs">
-                  <section class="slidetext2">
-                    <p class="slidetopic">Publication Design</p>
-                    <p class="slidetitle">Material <br>Trace</p>
-                    <p class="slideppl">———designed for Fofa Gallery</p>
-                  </section>
-            </a></div>
-
-            <div id="slideanges" class="mySlides fade">
-                <a href="cujah"><img src="slides/slide6.gif" alt="CUJAH" class="slideimgs">
-                  <img src="slides/mobile/slide6.gif" alt="CUJAH" class="mobileslideimgs">
-                  <section class="slidetext">
-                    <p class="slidetopic">Publication Design</p>
-                    <p class="slidetitle">CUJAH XV</p>
-                    <p class="slideppl">———designed for Concordia University</p>
-                  </section>
-            </a></div>
-        </div>
-      </section>
-
-              <a href="#blackbg"><div id="block1"></div><div id="triangle2"></div></a>
-
-    <div id="dotholder">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
-
-    <div id="blackbg">
-        <a href="synacor" class="works" id="work2">
-          <img src="images/works/synacor.jpg" alt="Push App" class="workimg">
-          <div class="workoverlay"></div>
-            <div class="worktext">
-              <p class="worktopic">UX | UI</p>
-              <p class="worktitle">Synacor Push <br> Notification Tool</p>
-              <p class="workppl">———designed with Synacor</p>
-            </div>
-        </a>
-        <a href="cbs" class="works" id="work1">
-          <img src="images/works/cbs.gif" alt="CBS" class="workimg">
-          <div class="workoverlay"></div>
-          <div class="worktext">
-            <p class="worktopic">Graphic Design</p>
-            <p class="worktitle">Type to <br> save a life</p>
-            <p class="workppl">———designed at Canadian Blood Services</p>
-          </div>
-        </a>
-        <a href="daresay" class="works" id="work3">
-          <img src="images/works/daresay.gif" alt="daresay" class="workimg">
-          <div class="workoverlay"></div>
-          <div class="worktext">
-            <p class="worktopic">Type Design | UX | UI</p>
-            <p class="worktitle">Daresay Typeface</p>
-            <p class="workppl">———designed at Concordia University</p>
-          </div>
-        </a>
-        <a href="faces.html" class="works" id="work4">
-          <img src="images/works/faces.gif" alt="faces magazine" class="workimg">
-          <div class="workoverlay"></div>
-          <div class="worktext">
-            <p class="worktopic">Graphic Design</p>
-            <p class="worktitle">FACES Magazine</p>
-            <p class="workppl">———designed for FACES Magazine</p>
-          </div>
-        </a>
-        <a href="fofa" class="works" id="work5">
-          <img src="images/works/fofa.jpg" alt="USE Catalogue" class="workimg">
-          <div class="workoverlay"></div>
-          <div class="worktext">
-            <p class="worktopic">Publication Design</p>
-            <p class="worktitle">Material Trace</p>
-            <p class="workppl">———designed for Fofa Gallery</p>
-          </div>
-        </a>
-        <a href="cujah" class="works" id="work6">
-          <img src="images/works/cujah.gif" alt="CUJAH" class="workimg">
-          <div class="workoverlay"></div>
-          <div class="worktext">
-            <p class="worktopic">Branding | UX | UI | Graphic Design</p>
-            <p class="worktitle">CUJAH XV</p>
-            <p class="workppl">———designed for Concordia University</p>
-          </div>
-        </a>
+  <div class="main-container">
+    <div id="Bio">
+      <p id="bio-header">Hi, I’m Émilie Brunet, a Graphic Designer based in Ottawa.</p>
+      <p id="bio-desc">After completing my BFA at Concordia University in Montreal, I set off to use my passion for design to help others. Since then, I’ve collaborated with countless charitable organizations and businesses to achieve their design and marketing goals (with help from my teacup poodle, Lucie, of course.)<p>
     </div>
+    <div id="Photo"></div>
+  </div>
 
-    <div id="about">
 
-        <img id="myface" alt="Émilie Brunet" src="images/me_square.jpg">
+              <a><div id="block1"><div  class="marquee">
+                <p id="scrolling-text">GRAPHIC DESIGN    •   BRANDING    •   WEB DESIGN    •   PRINT    •    GRAPHIC DESIGN    •   BRANDING    •   WEB DESIGN    •   PRINT    •    GRAPHIC DESIGN    •   BRANDING    •   WEB DESIGN    •   PRINT    •    GRAPHIC DESIGN    •   BRANDING    •   WEB DESIGN    •   PRINT    •    </p>
+            </div></div></a>
 
-            <div id="about3">
-                <h3>Hi, I'm Émilie!</h3>
-                <p id="aboutMe">I’m an Ottawa-based graphic designer with a love for branding, web design, digital advertising, and print.<br><br>
+            <a href="#block1"><div id="scroll"></div></a>
 
-After completing my BFA at Concordia University in Montreal, I set off to use my passion for design to help others. Since then, I’ve collaborated with countless charitable organizations and businesses, both big and small, to achieve their design and marketing goals.<br><br>
-
-I’m perpetually inspired by people who want to do good in the world. If that sounds like you, I’d love to chat about bringing your vision to life through graphic design.</p>
+            <a href="montfort"><div class="works-container">
+              <div class="projectpic1" id="projectpic1"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">01</p>
+                <div class="workspholder">
+                <p class="worktopic">Web Design | Report Design</p>
+                <p class="worktitle">Montfort <br> Foundation</p>
+                <p class="workppl">———designed at KarmaDharma</p>
+              </div>
+            </div>
+          </div></a>
+            <a href="opha"><div class="works-container">
+              <div class="projectpic1" id="projectpic2"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">02</p>
+                <div class="workspholder">
+                <p class="worktopic">Branding | Email Marketing</p>
+                <p class="worktitle">Ontario Professional Hairstylist Association</p>
+                <p class="workppl">———designed at KarmaDharma</p>
+              </div>
+            </div>
+          </div></a>
+            <a href="ohh"><div class="works-container">
+              <div class="projectpic1" id="projectpic3"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">03</p>
+                <div class="workspholder">
+                <p class="worktopic">Digital Advertising | Web Design</p>
+                <p class="worktitle">Orléans Health Hub</p>
+                <p class="workppl">———designed at KarmaDharma</p>
+              </div>
+            </div>
+          </div></a>
+            <a href="cbs"><div class="works-container">
+              <div class="projectpic1" id="projectpic4"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">04</p>
+                <div class="workspholder">
+                <p class="worktopic">Digital Advertising | Graphic Design</p>
+                <p class="worktitle">Type to Save a Life</p>
+                <p class="workppl">———designed at Canadian Blood Services</p>
+              </div>
+            </div>
+          </div></a>
+            <a href="faces"><div class="works-container">
+              <div class="projectpic1" id="projectpic5"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">05</p>
+                <div class="workspholder">
+                <p class="worktopic">Editorial Design</p>
+                <p class="worktitle">FACES Magazine</p>
+                <p class="workppl">———designed for FACES Magazine</p>
+              </div>
+            </div>
+          </div></a>
+            <a href="daresay"><div class="works-container">
+              <div class="projectpic1" id="projectpic6"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">06</p>
+                <div class="workspholder">
+                <p class="worktopic">Type Design | Web Design</p>
+                <p class="worktitle">daresay</p>
+                <p class="workppl">———designed at Concordia University</p>
+              </div>
+            </div></a>
+            <a href="cujah"><div class="works-container">
+              <div class="projectpic1" id="projectpic7"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">07</p>
+                <div class="workspholder">
+                <p class="worktopic">Publication Design</p>
+                <p class="worktitle">CUJAH XV</p>
+                <p class="workppl">———designed at Concordia University</p>
+              </div>
+            </div></a>
+            <a href="synacor"><div class="works-container">
+              <div class="projectpic1" id="projectpic8"></div>
+              <div class="projectdesc">
+                 <p class="projectnum">08</p>
+                <div class="workspholder">
+                <p class="worktopic">UX | UI</p>
+                <p class="worktitle">Synacor Push <br> Notification Tool</p>
+                <p class="workppl">———designed at Synacor</p>
+              </div>
+            </div></a>
             </div>
 
-    </div>
+
                     <a href="index" class="smooth"><div id="triangle"></div></a>
     <div id="contact" class"contacttext">
-        <h1>Let's make something great.</h1>
-<br><br>
-        <h2>613.325.1887</h2>
-        <a id="annoyinga" href="mailto:emilie.brunet.design@gmail.com">
+        <h1>Let's make something <br> great together.</h1>
+        <p id="contacttext2">If you want to collaborate, say hello, or just <br>give Lucie a treat, you can reach me at:</p>
+<br>
+        <a href="tel: 6133251887"><h2>613.325.1887</h2></a>
+        <a href="mailto:emilie.brunet.design@gmail.com">
             <h2>emilie.brunet.design@gmail.com</h2>
         </a>
         <section id="sociallinks">
@@ -271,12 +230,12 @@ I’m perpetually inspired by people who want to do good in the world. If that s
         }
 
     </script>
-    <script>
+    <!-- <script>
     window.addEventListener('scroll', () => {
       $('#block1').fadeOut(200);
       $('#triangle2').fadeOut(200);
     });
-    </script>
+    </script> -->
 
     <script>
 var coll = document.getElementsByClassName("collapsible");
