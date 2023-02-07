@@ -25,6 +25,7 @@ a {
 
 .main-container {
     margin-top: 8vh;
+    position: relative;
 }
 
 .works-container {
@@ -69,6 +70,10 @@ float: left;
   font-style: italic;
 }
 
+.header-span-1:hover{
+  color: #5C61FF;
+}
+
 #bio-desc {
   font-family: Avenir, sans-serif;
   font-size: 24px;
@@ -105,9 +110,9 @@ float: left;
   width: 100vw;
   background-color: #D6D8FF;
   margin-top: 0vh;
-  border-top: solid 1px #000000;
-  overflow: hidden;
     height: 8vh;
+    position: absolute;
+    bottom: 0px;
 }
 
 .marquee {
