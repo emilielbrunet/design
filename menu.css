@@ -59,7 +59,7 @@
 	color: #5C61FF;
 	transition: 0.3s;
   font-family: monarcha, serif;
-font-weight: bold;
+font-weight: book;
 font-style: normal;
 	border: none;
 	border-style: hidden;
@@ -143,7 +143,7 @@ font-style: normal;
 
 .major{
   font-family: monarcha, serif;
-font-weight: bold;
+font-weight: book;
 font-style: normal;
 font-size: 4em;
 color: #5C61FF;

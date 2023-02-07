@@ -34,7 +34,10 @@ a {
 #Bio{
   float: left;
   width: 65%;
-  height: 84vh;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-right: solid #000000 1px;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -44,14 +47,14 @@ a {
 #Photo{
 float: left;
   width: 35%;
-  height: 84vh;
+  height: 92vh;
   background-image: url("images/me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #bio-header {
-  font-family: monarcha, serif;
+  font-family: Avenir, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #000000;
@@ -60,9 +63,15 @@ float: left;
   text-align: left;
 }
 
+.header-span-1{
+  font-family: Monarcha, serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
 #bio-desc {
   font-family: Avenir, sans-serif;
-  font-size: 1em;
+  font-size: 24px;
   padding-right: 5vw;
   margin-top: -20px;
   color: #000000;
@@ -190,7 +199,7 @@ transition: background-size 1s;
 
 .projectnum {
   font-family: monarcha, serif;
-  font-weight: bold;
+  font-weight: book;
   font-style: normal;
   line-height: 1em;
   margin-top: -2px;
@@ -216,7 +225,7 @@ transition: background-size 1s;
 .worktitle {
   font-size: 2em;
   font-family: monarcha, serif;
-  font-weight: bold;
+  font-weight: book;
   font-style: normal;
   line-height: 1em;
   margin-top: -2px;
@@ -254,7 +263,7 @@ h1 {
     line-height: 1.05;
     color: #5C61FF;
     font-family: monarcha, serif;
-font-weight: bold;
+font-weight: normal;
 font-style: normal;
     margin-top: 0px;
 }
@@ -359,7 +368,7 @@ h2 {
     .worktitle {
       font-size: 2.1em;
       font-family: monarcha, serif;
-      font-weight: bold;
+      font-weight: book;
       font-style: normal;
       line-height: 1em;
       margin-top: -2px;
