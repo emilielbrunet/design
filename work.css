@@ -169,7 +169,7 @@ width: 60vw;
   user-select: none;
   -webkit-user-select: none;
   font-family: monarcha, serif;
-font-weight: bold;
+font-weight: regular;
 font-style: normal;
 }
 
@@ -216,7 +216,7 @@ font-style: normal;
 .description {
   display: inline-block;
   color: #000000;
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: Avenir, sans-serif;
 }
 
@@ -230,7 +230,7 @@ font-style: normal;
 }
 
 .slidetopic {
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: Avenir, sans-serif;
   padding-top: 2vw;
     color: #000000;
@@ -240,14 +240,14 @@ font-style: normal;
   font-size: 3em;
   font-family: monarcha, serif;
     color: #000000;
-font-weight: bold;
+font-weight: regular;
 font-style: normal;
   line-height: 1.10;
   margin-top: 0.5vw;
 }
 
 .slideppl {
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: Avenir, sans-serif;
   margin-top: -2em;
 }
@@ -256,7 +256,7 @@ font-style: normal;
   float: right;
   width: 60vw;
   padding: 3vw;
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: Avenir, sans-serif;
   background-color: #FBF5EF ;
   color: #000000;
