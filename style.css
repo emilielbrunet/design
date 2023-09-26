@@ -163,7 +163,7 @@ transition: background-size 1s;
 }
 
 #projectpic1 {
-    background-image: url("images/lotus/Lotus-home-mockup.jpg");
+    background-image: url("images/lotus/mockup_lotus_guide.jpg");
 }
 
 #projectpic2 {
@@ -260,6 +260,7 @@ transition: background-size 1s;
     font-family: Avenir, sans-serif;
     border-top: 1px solid #000000;
     top: -1px;
+	text-decoration: none;
 }
 
 .contacttext,
@@ -271,6 +272,8 @@ h1 {
 font-weight: normal;
 font-style: normal;
     margin-top: 0px;
+		text-decoration: none;
+
 }
 
 #contacttext2 {
