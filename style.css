@@ -289,16 +289,13 @@ h2 {
     font-weight: normal;
     line-height: 20pt;
     color: #5C61FF;
-    font-weight: bold;
     cursor: pointer;
+	
 }
 
-.contacttext,a h2 {
-    text-decoration: underline;
-}
 
 .contacttext,a h2:hover {
-  font-style: italic;
+  text-decoration: underline;
 }
 
 
