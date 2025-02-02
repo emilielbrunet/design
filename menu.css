@@ -39,7 +39,39 @@
   margin-top: 1vh;
   cursor: pointer;
   z-index: 3;
+	display: none;
 }
+
+.desktopnav{
+		display: flex;
+		float: right;
+	align-items: center;
+	height: 100%;
+}
+
+.desktoplink{
+	padding-right: 32px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+	font-family: avenir, sans-serif;
+
+}
+
+.desktoplink:hover{
+	color: #5C61FF;	
+}
+
+.navbutton {
+	padding:10px 24px 10px 24px; 
+	background-color: #5C61FF; 
+	border-radius: 32px; 
+	color:#ffffff; 
+	text-decoration: none;
+	margin-right: 32px;
+	font-family: avenir, sans-serif;
+}
+
 
 .closebtn {
     position: absolute;
@@ -219,7 +251,12 @@ color: #5C61FF;
 
     #mobilenav {
       right: 3vw;
+		display: block;
     }
+	
+	.desktopnav{
+		display: none;
+	}
 
     .closebtn {
         right: 3vw;

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>éb design - Émilie Brunet</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkh4rin.css">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
+
+    <meta name="keywords" content="freelance graphic designer canada, web design services, graphic design montreal, website designer montreal, montreal graphic designer, graphic design canada, web design studio, montreal creative agency, graphic designer for hire, graphic design solutions, brochure design services, flyer design services, handout design services, brand identity design, branding for small business, how to build a website, how to create a logo, graphic design services, Graphic, Design, Graphic Design, Web Design, Branding, Freelance, Designer, éb, eb, Émilie Brunet, Brunet, Emilie, Montreal, Quebec, Canada">
+    
+    <meta name="description" content="Freelance Graphic Designer offering services in branding and web design">
+    <meta name="author" content="Émilie Brunet">
+    
+    <meta property="og:title" content="éb design">
+    <meta property="og:url" content="https://emiliebrunetdesign.com/">
+    <meta property="og:image" content="https://emiliebrunetdesign.com/images/FeatureImage.jpg">
+    
+    <meta property="twitter:title" content="éb design">
+    <meta property="twitter:url" content="https://emiliebrunetdesign.com/">
+    <meta property="twitter:image" content="https://emiliebrunetdesign.com/images/FeatureImage.jpg">
+</head>
+
+<body>
+  <div id="header">
+      <div id="navbar"><a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
+		  <div class="desktopnav">
+			  <a href="index.html#projectpic1" class="desktoplink">Work</a>
+				<a href="about.html" class="desktoplink">About</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="desktoplink">CV</a>
+			          <a href="index.html#contact" target="_blank" class="navbutton">Get in touch</a>
+		  </div>
+      <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
+      </div>
+      <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
+          <img id="logo2" alt="logo" src="images/logo2.png">
+          <div class="overlay-content">
+              <a href="index.html#projectpic1" class="current major" onclick="closeNav()">Work</a>
+			  <br>
+				<a href="about.html" class="current major" onclick="closeNav()">About</a>
+              <a href="index.html#contact" class="block major" onclick="closeNav()">Contact</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="block major" onclick="closeNav()">CV</a>
+              <section id="sociallinks">
+                  <a href="https://www.behance.net/emiliebrunetdesign/"target="_blank"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"target="_blank"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emiliebrunetdesign/"target="_blank"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+				  <a href="mailto:emilie.brunet.design@gmail.com"><img alt="mail icon" class="social" src="images/mail.png"></a>
+
+              </section>
+          </div>
+      </nav>
+  </div>
+
+    <div class="main-container">
+        <div id="Bio">
+            <p style="font-size: 24px;">
+                <strong>Hi, I’m Émilie!</strong> 👋🏻<br><br>
+                I’m a Canadian graphic designer specializing in branding and web design. Currently, I’m the Senior Marketing Designer at MEDFAR Clinical Solutions, where I lead brand and marketing initiatives.<br><br>
+                With a BFA from Concordia University and experience across nonprofits, agencies, and tech companies, I craft thoughtful, strategic designs that bring brands to life.<br><br>
+                When I’m not designing, I’m drinking tea, drawing portraits, reading novels, travelling, or hanging out with my toy poodle, Lucie.
+            </p>
+        </div>
+        <div id="Photo"></div>
+        <a href="#block1"><div id="scroll"></div></a>
+    </div>
+	
+	    <div class="grid-container">
+        <div class="grid-item" style="background-image: url('images/about/1938.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/about/6491.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/about/4887.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/about/5501.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/about/5797.jpg');"></div>
+        <div class="grid-item" style="background-image: url('images/about/6191.jpg');"></div>
+    </div>
+
+    <div id="contact" class="contacttext">
+        <h1>Let's make something <br> great together.</h1>
+		<form id="contactForm">
+  <label for="name" class="formlabel">Full Name</label>
+  <input type="text" id="name" class="forminput" name="name" required>
+  
+  <label for="email" class="formlabel">Email</label>
+  <input type="email" id="email" class="forminput" name="email" required>
+  
+  <label for="message" class="formlabel">Message</label>
+  <textarea id="message" name="message" class="forminput" required></textarea>
+  
+  <button type="submit" style="text-decoration: none; padding:10px 24px 10px 24px; color: #ffffff; border: none; border-radius: 32px; background-color:#5C61FF; cursor: pointer; width: 100%; font-size: 18px;">Send</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(this);
+  
+  fetch("https://formspree.io/f/mqaebgao", {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/json" }
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok) {
+      alert("Thank you for your message!");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  })
+  .catch(error => {
+    alert("There was an error. Please try again.");
+  });
+});
+</script>
+        <section id="sociallinks" style="margin-top: 50px;">
+            <a href="https://www.behance.net/emiliebrunetdesign/" target="_blank"><img class="social" alt="behance icon" src="images/behance.png"></a>
+            <a href="https://www.instagram.com/emiliebrunetdesign/" target="_blank"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+            <a href="https://www.linkedin.com/in/emiliebrunetdesign/" target="_blank"><img class="social" alt="linkedin icon" src="images/linkedin.png"></a>
+            <a href="mailto:emilie.brunet.design@gmail.com"><img class="social" alt="mail icon" src="images/mail.png"></a>
+        </section>
+    </div>
+	
+	<script>
+	  function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+</html>

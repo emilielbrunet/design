@@ -55,6 +55,12 @@
 
   <div id="header">
       <div id="navbar"><a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
+		  <div class="desktopnav">
+			  <a href="index.html#projectpic1" class="desktoplink">Work</a>
+				<a href="about.html" class="desktoplink">About</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="desktoplink">CV</a>
+			          <a href="index.html#contact" target="_blank" class="navbutton">Get in touch</a>
+		  </div>
       <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
       </div>
       <nav id="myNav" class="overlay">
@@ -62,6 +68,8 @@
           <img id="logo2" alt="logo" src="images/logo2.png">
           <div class="overlay-content">
               <a href="index.html#projectpic1" class="current major" onclick="closeNav()">Work</a>
+			  <br>
+				<a href="about.html" class="current major" onclick="closeNav()">About</a>
               <a href="index.html#contact" class="block major" onclick="closeNav()">Contact</a>
               <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="block major" onclick="closeNav()">CV</a>
               <section id="sociallinks">
@@ -75,11 +83,11 @@
       </nav>
   </div>
 
+
   <div class="main-container">
-    <div id="Bio">
-      <p id="bio-header">Hi, I’m Émilie 👋🏻<br> Canadian <span class="header-span-1">graphic designer</span> specializing in <span class="header-span-1">branding</span> and <span class="header-span-1">web design</span>.</p>
+    <div id="Bio2">
+      <p id="bio-header">Hi, I’m Émilie 👋🏻<br> Canadian <span class="header-span-1">graphic designer</span> specialized in <span class="header-span-1">branding</span> and <span class="header-span-1">web design</span>.</p>
     </div>
-    <div id="Photo"></div>
     <a href="#block1"><div id="scroll"></div></a>
 
   </div>
@@ -151,7 +159,49 @@
 
     <div id="contact" class="contacttext">
         <h1>Let's make something <br> great together.</h1>
+<!--
         <a href="https://form.typeform.com/to/dHkLjYTa" target="_blank" style="text-decoration: none; padding:10px 24px 10px 24px; background-color: #ffffff; border: 2px solid #5C61FF; border-radius: 32px; color:#5C61FF ">Get in touch</a>
+		
+-->
+		<form id="contactForm">
+  <label for="name" class="formlabel">Full Name</label>
+  <input type="text" id="name" class="forminput" name="name" required>
+  
+  <label for="email" class="formlabel">Email</label>
+  <input type="email" id="email" class="forminput" name="email" required>
+  
+  <label for="message" class="formlabel">Message</label>
+  <textarea id="message" name="message" class="forminput" required></textarea>
+  
+  <button type="submit" style="text-decoration: none; padding:10px 24px 10px 24px; color: #ffffff; border: none; border-radius: 32px; background-color:#5C61FF; cursor: pointer; width: 100%; font-size: 18px;">Send</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(this);
+  
+  fetch("https://formspree.io/f/mqaebgao", {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/json" }
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok) {
+      alert("Thank you for your message!");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  })
+  .catch(error => {
+    alert("There was an error. Please try again.");
+  });
+});
+</script>
+		
         <section id="sociallinks" style="margin-top: 50px;">
             <a href="https://www.behance.net/emiliebrunetdesign/"><img class="social" alt="behance icon" src="images/behance.png"></a>
             <a href="https://www.instagram.com/emiliebrunetdesign/" ><img class="social" alt="instagram icon" src="images/insta.png"></a>
