@@ -444,6 +444,10 @@ h2 {
       color: #000000;
       text-align: left;
     }
+	
+	#projectpic1 {
+    background-image: url("images/lotus/mockup_lotus_guide.jpg");
+}
 
     #projectpic3 {
         background-image: url("images/ohh/stories_static_mobile.jpg");
