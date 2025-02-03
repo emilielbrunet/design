@@ -461,6 +461,16 @@ h2 {
         background-image: url("images/cbs/headerimg_mobile.gif");
     }
 
+	
+	#Bio2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: solid #000000 1px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top:3vh;
+}
 
     /* ////Contact//// */
 
