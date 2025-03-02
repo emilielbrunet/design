@@ -142,15 +142,13 @@ float: left;
 /* /////////////Scroll down button////////////// */
 
   #scroll {
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    height: 8vh;
+	bottom: 0;
+	  background-color: red;
     position: absolute;
-    margin-top: -18vh;
-    margin-left: 48vw;
     z-index: 2;
     display: block;
-    background-image: url(images/arrow.png);
-    background-size: cover;
   }
 
   #scroll:hover {
@@ -160,14 +158,6 @@ float: left;
 
 /* /////////////Scrolling text bar////////////// */
 
-#block1 {
-  width: 100vw;
-  background-color: #D6D8FF;
-  margin-top: 0vh;
-    height: 8vh;
-    position: absolute;
-    bottom: 0px;
-}
 
 .marquee {
   display:inline-block;
