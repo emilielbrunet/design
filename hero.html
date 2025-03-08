@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkh4rin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
+</head>
+
+<body>
+
+    <div id="header">
+      <div id="navbar"><a href="index"><img id="logo" alt="logo" src="images/logo.png"></a>
+		  <div class="desktopnav">
+			  <a href="index.html#projectpic1" class="desktoplink">Work</a>
+				<a href="about.html" class="desktoplink">About</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="desktoplink">CV</a>
+			          <a href="index.html#contact" target="_blank" class="navbutton">Get in touch</a>
+		  </div>
+      <span onclick="openNav()"><img id="mobilenav" alt="menu" src="images/nav1.png"></span>
+      </div>
+      <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" onclick="closeNav()"><img class="closebtn" alt="logo" src="images/nav2.png"></a>
+          <img id="logo2" alt="logo" src="images/logo2.png">
+          <div class="overlay-content">
+              <a href="index.html#projectpic1" class="current major" onclick="closeNav()">Work</a>
+			  <br>
+				<a href="about.html" class="current major" onclick="closeNav()">About</a>
+              <a href="index.html#contact" class="block major" onclick="closeNav()">Contact</a>
+              <a href="EmilieBrunet_GraphicDesigner_CV.pdf" target="_blank" class="block major" onclick="closeNav()">CV</a>
+              <section id="sociallinks">
+                  <a href="https://www.behance.net/emiliebrunetdesign/"target="_blank"><img class="social" alt="behance icon" src="images/behance.png"></a>
+                  <a href="https://www.instagram.com/emiliebrunetdesign/"target="_blank"><img class="social" alt="instagram icon" src="images/insta.png"></a>
+                  <a href="https://www.linkedin.com/in/emiliebrunetdesign/"target="_blank"><img alt="linked in icon" class="social" src="images/linkedin.png"></a>
+				  <a href="mailto:emilie.brunet.design@gmail.com"><img alt="mail icon" class="social" src="images/mail.png"></a>
+
+              </section>
+          </div>
+      </nav>
+  </div>
+
+
+  <section class="projectdesc">
+    <section class="slidetext">
+      <p class="slidetopic">Advertising | Graphic Design</p>
+      <p class="slidetitle">Littlest Heroes</p>
+      <p class="slideppl">———designed at Canadian Blood Services</p>
+    </section>
+    <div class="description">
+      <p>The "Littlest Heroes" campaign aimed to encourage pregnant mothers to donate cord blood, highlighting newborn babies as the true heroes for their potential to save lives. By raising awareness during Cord Blood Awareness Month, the campaign sought to engage expectant families across Canada. <br><br>I contributed by designing impactful print and digital assets that effectively communicated the message. The campaign’s success was driven by strategic placements and thoughtful design, to inform the general public about cord blood donation and inspire action.</p>
+    </div>
+  </section>
+
+  <div id="headerimgright"><img class="headerimg headerimg3" src="images/cord/01-headerimg.png"></div>
+
+<div class="row">
+	  <div class="minidesc"><p id="minidesc1">
+Lamp post banner in Edmonton, AB.
+</p></div>
+  <div class="column">
+    <img src="images/cord/02-CaraIG.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="cursor">
+  </div>
+		  <div class="minidesc"><p id="minidesc2">
+Series of social media posts for Instagram, Facebook and Twitter (X).
+</p></div>
+  <div class="column">
+    <img src="images/cord/03-street_sign-2.jpg" style="width:100%;" onclick="openModal();currentSlide(2)" class="cursor">
+  </div>
+		  <div class="minidesc"><p id="minidesc3">
+Roadside billboard in Vancourver, BC.
+</p></div>
+  <div class="column">
+    <img src="images/cord/04-cart_sticker.png" style="width:100%" onclick="openModal();currentSlide(3)" class="cursor">
+  </div>
+		  <div class="minidesc"><p id="minidesc4">
+Advertisement used in hospitals for cord blood collection carts.
+</p></div>
+  <div class="column">
+    <img src="images/cord/05-Baby-hero-button.jpg" style="height:100%" onclick="openModal();currentSlide(4)" class="cursor">
+  </div>
+		  <div class="minidesc"><p id="minidesc5">
+Pin given to new mothers for their "littlest hero" after donating.
+</p></div>
+	  <div class="column">
+    <img src="images/cord/06-CBB one-pager.jpg" style="height:100%" onclick="openModal();currentSlide(5)" class="cursor">
+  </div>
+		  <div class="minidesc"><p id="minidesc6">
+Informative onepager, placed in hospital waiting rooms. 
+</p></div>
+  <div class="column">
+    <img src="images/cord/06-wallboard.gif" style="height:100%" onclick="openModal();currentSlide(6)" class="cursor">
+  </div>
+			  <div class="minidesc"><p id="minidesc7">
+Wall sign in Lois Hole Hospital for Women in Edmonton, AB.
+</p></div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" style="cursor:pointer" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/cord/02-CaraIG.jpg">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/cord/03-street_sign-2.jpg">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img  class="lightboximg" src="images/cord/04-cart_sticker.png">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/cord/05-Baby-hero-button.jpg">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+	  
+	      <div class="mySlides">
+      <img class="lightboximg" src="images/cord/06-CBB one-pager.jpg">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img class="lightboximg" src="images/cord/06-wallboard.gif">
+      <div class="caption-container">
+        <p class="caption"></p>
+      </div>
+    </div>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+	
+	
+
+<div id="footerbar">
+  <!-- <a href="synacor.html" class="projprev">&#10094;</a> -->
+  <a href="opha" class="projnext">OPHA ⇨</a>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var content = this.nextElementSibling;
+if (content.style.display === "block") {
+  content.style.display = "none";
+} else {
+  content.style.display = "block";
+}
+});
+}
+</script>
+
+</body>
+</html>

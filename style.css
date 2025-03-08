@@ -1,5 +1,5 @@
 body {
-    background: #FCF7F3;
+    background: #ffffff;
     overflow-x: hidden;
     max-width: 100vw;
     cursor: url('images/cursor.png'), auto;
@@ -144,15 +144,10 @@ float: left;
   #scroll {
     width: 100%;
     height: 8vh;
-	bottom: 0;
-	  background-color: red;
+	bottom: 0px;
     position: absolute;
     z-index: 2;
     display: block;
-  }
-
-  #scroll:hover {
-    margin-top: -17vh;
   }
 
 
@@ -211,7 +206,7 @@ transition: background-size 1s;
 }
 
 #projectpic2 {
-    background-image: url("images/opha/opha_1_header.jpg");
+    background-image: url("images/opha/opha_1_header-2.jpg");
 }
 
 #projectpic3 {
@@ -219,7 +214,7 @@ transition: background-size 1s;
 }
 
 #projectpic4 {
-    background-image: url("images/cbs/headerimg.gif");
+    background-image: url("images/cord/header-3.jpg");
 }
 
 #projectpic5 {
@@ -272,7 +267,7 @@ transition: background-size 1s;
 }
 
 .worktitle {
-  font-size: 2em;
+  font-size: 3em;
   font-family: monarcha, serif;
   font-weight: book;
   font-style: normal;
@@ -376,9 +371,6 @@ h2 {
 
     /* ////Scroll button/// */
 
-    #scroll{
-      display: none;
-    }
 
     /* /////////////Works on main pg////////////// */
 
@@ -445,7 +437,7 @@ h2 {
 
 
     #projectpic4 {
-        background-image: url("images/cbs/headerimg_mobile.gif");
+        background-image: url("images/cord/header-3.jpg");
     }
 
 	
