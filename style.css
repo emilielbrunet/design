@@ -202,34 +202,40 @@ transition: background-size 1s;
 }
 
 #projectpic1 {
-    background-image: url("images/lotus/mockup_lotus_guide.jpg");
+    background-image: url("images/medfar/01-Head-Office-header.jpg");
 }
 
+
 #projectpic2 {
-    background-image: url("images/opha/opha_1_header-2.jpg");
+    background-image: url("images/lotus/Header-front-desk.jpg");
 }
 
 #projectpic3 {
-    background-image: url("images/ohh/stories_static.jpg");
+    background-image: url("images/cord/header-3.jpg");
 }
 
+
 #projectpic4 {
-    background-image: url("images/cord/header-3.jpg");
+    background-image: url("images/opha/opha_1_header-2.jpg");
 }
 
 #projectpic5 {
     background-image: url("images/faces/FACES_all.jpg");
 }
 
-#projectpic6 {
-    background-image: url("images/daresay/headerimg3.jpg");
+#projectpic10 {
+    background-image: url("images/ohh/stories_static.jpg");
 }
 
 #projectpic7 {
-    background-image: url("images/cujah/headerstack.jpg");
+    background-image: url("images/daresay/headerimg3.jpg");
 }
 
 #projectpic8 {
+    background-image: url("images/cujah/headerstack.jpg");
+}
+
+#projectpic9 {
     background-image: url("images/synacor/headerimg2.jpg");
 }
 
@@ -426,7 +432,7 @@ h2 {
       text-align: left;
     }
 	
-	#projectpic1 {
+	#projectpic2 {
     background-image: url("images/lotus/mockup_lotus_guide.jpg");
 }
 
@@ -435,7 +441,7 @@ h2 {
     }
 
 
-    #projectpic4 {
+    #projectpic2 {
         background-image: url("images/cord/header-3.jpg");
     }
 

@@ -347,6 +347,7 @@ font-style: normal;
 
     #headerimgright2 {
       width: 100vw;
+		background-size: cover;
       display: block;
     }
 
