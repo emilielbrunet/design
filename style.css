@@ -437,7 +437,8 @@ h2 {
 }
 
     #projectpic3 {
-        background-image: url("images/ohh/stories_static_mobile.jpg");
+        background-image: url("images/cord/01-headerimg.png");
+		float: right;
     }
 
 
