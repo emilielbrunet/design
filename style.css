@@ -433,18 +433,20 @@ h2 {
     }
 	
 	#projectpic2 {
-    background-image: url("images/lotus/mockup_lotus_guide.jpg");
+    background-image: url("images/lotus/Header-front-desk.jpg");
+				background-position: center;
 }
 
     #projectpic3 {
         background-image: url("images/cord/01-headerimg.png");
-		float: right;
+		background-position: left;
     }
+	
+	#projectpic1 {
+		background-position: left;
+	}
 
 
-    #projectpic2 {
-        background-image: url("images/cord/header-3.jpg");
-    }
 
 	
 	#Bio2{
