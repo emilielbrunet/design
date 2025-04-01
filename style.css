@@ -43,8 +43,8 @@ a {
   border-right: solid #000000 1px;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top:30px;
-	padding-bottom:30px;
+  padding-top:3vh;
+	padding-bottom:3vh;
 }
 
 #Bio2{
@@ -354,7 +354,9 @@ h2 {
 
     #Bio{
       width: 100%;
-      padding-top:0vh;
+		height: auto;
+      padding-top:30px;
+		 padding-bottom:30px;
     }
 
     #Photo{
