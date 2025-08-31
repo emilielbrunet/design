@@ -15,8 +15,8 @@ body {
 }
 
 .cursor {
-  border-bottom: 1px solid #000000;
-  border-top: 1px solid #000000;
+  border-bottom: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
   cursor: pointer;
 }
 
@@ -90,8 +90,9 @@ width: 60vw;
 .projectlink {
   text-decoration:underline;
   color: #000000;
-  font-family:Avenir,sans-serif;
-  font-size:0.9em; font-weight:bold;
+	font-weight: 700;
+  font-family:"commuters-sans",sans-serif;
+  font-size:0.9em; 
 }
 
 .projectlink:hover {
@@ -168,8 +169,8 @@ width: 60vw;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  font-family: monarcha, serif;
-font-weight: regular;
+  font-family: "ogg", serif;
+font-weight: 400;
 font-style: normal;
 }
 
@@ -210,14 +211,15 @@ font-style: normal;
   position: fixed;
   padding: 3vw;
   overflow-y: scroll;
-  border-right: #000000 solid 1.5px;
+  border-right: #b3b3b3 solid 1.5px;
 }
 
 .description {
   display: inline-block;
   color: #000000;
   font-size: 1em;
-  font-family: Avenir, sans-serif;
+	font-weight: 300;
+  font-family: "commuters-sans", sans-serif;
 }
 
 .slidetext {
@@ -231,16 +233,17 @@ font-style: normal;
 
 .slidetopic {
   font-size: 1em;
-  font-family: Avenir, sans-serif;
+  font-family: "commuters-sans", sans-serif;
   padding-top: 2vw;
     color: #000000;
+text-transform: uppercase;
 }
 
 .slidetitle {
   font-size: 3em;
-  font-family: monarcha, serif;
+  font-family: "ogg", serif;
     color: #000000;
-font-weight: regular;
+font-weight: 400;
 font-style: normal;
   line-height: 1.10;
   margin-top: 0.5vw;
@@ -248,7 +251,7 @@ font-style: normal;
 
 .slideppl {
   font-size: 1em;
-  font-family: Avenir, sans-serif;
+  font-family: "commuters-sans", sans-serif;
   margin-top: -2em;
 }
 
@@ -257,7 +260,7 @@ font-style: normal;
   width: 60vw;
   padding: 10px 20px 20px 20px;
   font-size: 1em;
-  font-family: Avenir, sans-serif;
+  font-family: "commuters-sans", sans-serif;
   background-color: #ffffff ;
   color: #000000;
   margin-top: -5px;
@@ -276,7 +279,7 @@ font-style: normal;
   font-size: 22px;
   border-radius: 0 3px 3px 0;
   text-decoration: none;
-  font-family: Avenir, sans-serif;
+  font-family: "commuters-sans", sans-serif;
 }
 
 #x{
@@ -285,6 +288,7 @@ font-style: normal;
 
 .projnext {
   right: 2vw;
+	font-family: "ogg", serif;
 }
 
 .projprev {
@@ -293,7 +297,7 @@ font-style: normal;
 
 .projnext:hover {
   font-style: italic;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .projprev:hover {
@@ -410,7 +414,7 @@ font-style: normal;
     }
 
     .headerimg3{
-      border-top: solid 1px #000000;
+      border-top: solid 1px #b3b3b3;
     }
 
     #background-video {
