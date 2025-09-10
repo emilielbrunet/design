@@ -3,6 +3,7 @@ body {
   margin: 0;
   background: #ffffff;
   cursor: url('images/cursor.png'), auto;
+	line-height: 1.25;
 }
 
 * {
@@ -220,6 +221,7 @@ font-style: normal;
   font-size: 1em;
 	font-weight: 300;
   font-family: "commuters-sans", sans-serif;
+	line-height: 1.5;
 }
 
 .slidetext {
