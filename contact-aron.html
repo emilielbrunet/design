@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="aron-style.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-aron.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/mkh4rin.css">
+	<link rel="stylesheet" href="https://use.typekit.net/rhi3ean.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/icr3ygn.css">
+
+
+        
+	
+
+
+<title>Contact | Aron Archer</title>
+	
+	</head>
+
+<body style="background-color: #000000;">
+    
+      
+
+    <div id="contact" class="contacttext">
+        <h1>CONTACT</h1>
+<!--		
+-->
+		<form id="contactForm">
+  <label for="name" class="formlabel">FULL NAME</label>
+  <input type="text" id="name" class="forminput" name="name" required>
+  
+  <label for="email" class="formlabel">EMAIL</label>
+  <input type="email" id="email" class="forminput" name="email" required>
+  
+  <label for="message" class="formlabel">MESSAGE</label>
+  <textarea id="message" name="message" class="forminput" required></textarea>
+  
+  <button type="submit" style="text-decoration: none; padding:10px 24px 10px 24px; color: #ffffff; border: none; border-radius: 32px; background-color:#ff0633; cursor: pointer; width: 100%; font-size: 18px;">SEND</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const formData = new FormData(this);
+  
+  fetch("https://formspree.io/f/mjgzkbgv", {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/json" }
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok) {
+      alert("Thank you for your message!");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  })
+  .catch(error => {
+    alert("There was an error. Please try again.");
+  });
+});
+</script>
+
+</body>
+
+</html>
